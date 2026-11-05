@@ -159,6 +159,11 @@ function reduceSeriesToRows(
         if (t) {
           f.type = t;
         }
+        // Reducing a text field yields its (string) values, e.g. "200". When the column is guessed to be
+        // numeric those must become real numbers, otherwise min/max and formatting downstream see strings.
+        if (f.type === FieldType.number) {
+          f.values = f.values.map((v) => (typeof v === 'string' ? Number(v) : v));
+        }
       }
     }
 

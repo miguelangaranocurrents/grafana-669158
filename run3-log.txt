@@ -1,0 +1,819 @@
+e2e	Run e2e tests	﻿2026-11-05T15:42:58.8238298Z ##[group]Run yarn e2e:playwright --project=panels --project=dashboards --project=various 'panels-suite/(gauge|stat|timeseries|table-|panelEdit_(base|queries|toolbarActions|transforms)|state-timeline|status-history|barchart-|histogram|trend|xychart)' dashboards-suite/ 'various-suite/(inspect-drawer|keybinds)'
+e2e	Run e2e tests	2026-11-05T15:42:58.8240705Z [36;1myarn e2e:playwright --project=panels --project=dashboards --project=various 'panels-suite/(gauge|stat|timeseries|table-|panelEdit_(base|queries|toolbarActions|transforms)|state-timeline|status-history|barchart-|histogram|trend|xychart)' dashboards-suite/ 'various-suite/(inspect-drawer|keybinds)'[0m
+e2e	Run e2e tests	2026-11-05T15:42:58.8262193Z shell: /usr/bin/bash -e {0}
+e2e	Run e2e tests	2026-11-05T15:42:58.8262454Z env:
+e2e	Run e2e tests	2026-11-05T15:42:58.8262745Z   TMPDIR: /home/runner/work/grafana-669158/grafana-669158/../tmp
+e2e	Run e2e tests	2026-11-05T15:42:58.8263097Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Run e2e tests	2026-11-05T15:42:58.8263324Z   GOTOOLCHAIN: local
+e2e	Run e2e tests	2026-11-05T15:42:58.8263570Z   GRAFANA_URL: http://localhost:3001
+e2e	Run e2e tests	2026-11-05T15:42:58.8263936Z   GRAFANA_SUBPATH_URL: http://localhost:3002/grafana
+e2e	Run e2e tests	2026-11-05T15:42:58.8264252Z   CI: true
+e2e	Run e2e tests	2026-11-05T15:42:58.8264881Z   CURRENTS_RECORD_KEY: ***
+e2e	Run e2e tests	2026-11-05T15:42:58.8265154Z   CURRENTS_PROJECT_ID: ***
+e2e	Run e2e tests	2026-11-05T15:42:58.8265384Z ##[endgroup]
+e2e	Run e2e tests	2026-11-05T15:43:03.6460741Z 📦 Currents reporter: 2.7.0 recording to project ***
+e2e	Run e2e tests	2026-11-05T15:43:03.6462986Z 🎭 Playwright: 1.56.1 197 tests in 4 projects [authenticate, various, panels, dashboards] 
+e2e	Run e2e tests	2026-11-05T15:43:05.9988813Z 🔨 CI Build ID: miguelangaranocurrents/grafana-669158-42055639177-1 auto-detected
+e2e	Run e2e tests	2026-11-05T15:43:05.9991030Z 🌐 Run URL: https://app.currents.dev/run/0d85b9c8e894860a
+e2e	Run e2e tests	2026-11-05T15:43:05.9991536Z 
+e2e	Run e2e tests	2026-11-05T15:43:05.9991914Z ================================================================
+e2e	Run e2e tests	2026-11-05T15:43:05.9992290Z 
+e2e	Run e2e tests	2026-11-05T15:43:06.0769476Z   passed [authenticate] › node_modules/@grafana/plugin-e2e/dist/auth/auth.setup.js:5:7 › authenticate
+e2e	Run e2e tests	2026-11-05T15:43:39.8601357Z   passed [various] › e2e-playwright/various-suite/keybinds.spec.ts:16:9 › Keyboard shortcuts › sequence shortcuts should work
+e2e	Run e2e tests	2026-11-05T15:43:41.2518256Z   passed [various] › e2e-playwright/various-suite/keybinds.spec.ts:32:9 › Keyboard shortcuts › ctrl+z should zoom out the time range
+e2e	Run e2e tests	2026-11-05T15:43:41.7732268Z   passed [various] › e2e-playwright/various-suite/inspect-drawer.spec.ts:70:9 › Inspect drawer tests › Downloads CSV of the second frame after applying panel transformations
+e2e	Run e2e tests	2026-11-05T15:44:12.5130501Z   passed [various] › e2e-playwright/various-suite/keybinds.spec.ts:87:9 › Keyboard shortcuts › ctrl+o should toggle shared crosshair
+e2e	Run e2e tests	2026-11-05T15:44:12.7928342Z   passed [various] › e2e-playwright/various-suite/keybinds.spec.ts:57:9 › Keyboard shortcuts › time range shortcuts should work
+e2e	Run e2e tests	2026-11-05T15:44:37.5098071Z   failed [various] › e2e-playwright/various-suite/inspect-drawer.spec.ts:13:9 › Inspect drawer tests › Tests various Inspect Drawer scenarios (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:44:37.5116309Z 
+e2e	Run e2e tests	2026-11-05T15:44:37.5197378Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:44:37.5246359Z 
+e2e	Run e2e tests	2026-11-05T15:44:37.5277089Z 
+e2e	Run e2e tests	2026-11-05T15:44:37.5337362Z 
+e2e	Run e2e tests	2026-11-05T15:44:48.4378100Z   passed [panels] › e2e-playwright/panels-suite/barchart-legend.spec.ts:10:7 › Panels test: BarChart legend › legend visibility toggle
+e2e	Run e2e tests	2026-11-05T15:44:50.0898272Z   passed [panels] › e2e-playwright/panels-suite/barchart-datalinks.spec.ts:18:7 › Panels test: BarChart data links › shows data links in pinned tooltip flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:44:51.8079523Z   passed [panels] › e2e-playwright/panels-suite/barchart-legend.spec.ts:32:7 › Panels test: BarChart legend › legend mode and placement toggles
+e2e	Run e2e tests	2026-11-05T15:45:09.5668599Z   passed [panels] › e2e-playwright/panels-suite/barchart-nodata.spec.ts:10:7 › Panels test: BarChart no data › handles no data
+e2e	Run e2e tests	2026-11-05T15:45:26.2428459Z   passed [panels] › e2e-playwright/panels-suite/barchart-options.spec.ts:74:7 › Panels test: BarChart options › full highlight - tooltip appears across bar column
+e2e	Run e2e tests	2026-11-05T15:45:42.2918695Z   passed [panels] › e2e-playwright/panels-suite/barchart-options.spec.ts:99:7 › Panels test: BarChart options › orientation - toggle vertical and horizontal
+e2e	Run e2e tests	2026-11-05T15:45:49.0448995Z   failed [panels] › e2e-playwright/panels-suite/barchart-options.spec.ts:12:7 › Panels test: BarChart options › show values - toggle always/never/auto (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:45:49.0514565Z 
+e2e	Run e2e tests	2026-11-05T15:45:49.0611318Z   Error: uplot renders with showValue=always
+e2e	Run e2e tests	2026-11-05T15:45:49.0681491Z 
+e2e	Run e2e tests	2026-11-05T15:45:49.0828200Z   [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T15:45:49.0850676Z 
+e2e	Run e2e tests	2026-11-05T15:45:49.0936757Z   Locator: locator('.uplot').first()
+e2e	Run e2e tests	2026-11-05T15:45:49.1100427Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T15:45:49.1199266Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-05T15:45:49.1328431Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-05T15:45:49.1426220Z 
+e2e	Run e2e tests	2026-11-05T15:45:49.1491666Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:45:49.1618546Z   [2m  - uplot renders with showValue=always with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T15:45:49.1656958Z   [2m  - waiting for locator('.uplot').first()[22m
+e2e	Run e2e tests	2026-11-05T15:45:49.1866230Z 
+e2e	Run e2e tests	2026-11-05T15:45:49.1949581Z 
+e2e	Run e2e tests	2026-11-05T15:45:49.2050021Z   [0m [90m 17 |[39m
+e2e	Run e2e tests	2026-11-05T15:45:49.2120972Z    [90m 18 |[39m     [36mconst[39m barchartUplot [33m=[39m page[33m.[39mlocator([32m'.uplot'[39m)[33m.[39mfirst()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:45:49.2162705Z   [31m[1m>[22m[39m[90m 19 |[39m     [36mawait[39m expect(barchartUplot[33m,[39m [32m'uplot renders with showValue=always'[39m)[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:45:49.2217405Z    [90m    |[39m                                                                        [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:45:49.2307077Z    [90m 20 |[39m
+e2e	Run e2e tests	2026-11-05T15:45:49.2428191Z    [90m 21 |[39m     [36mconst[39m showValuesOption [33m=[39m dashboardPage[33m.[39mgetByGrafanaSelector(
+e2e	Run e2e tests	2026-11-05T15:45:49.2521750Z    [90m 22 |[39m       selectors[33m.[39mcomponents[33m.[39m[33mPanelEditor[39m[33m.[39m[33mOptionsPane[39m[33m.[39mfieldLabel([32m'Bar chart Show values'[39m)[0m
+e2e	Run e2e tests	2026-11-05T15:45:49.2626318Z 
+e2e	Run e2e tests	2026-11-05T15:45:49.2698538Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/barchart-options.spec.ts:19:72
+e2e	Run e2e tests	2026-11-05T15:45:49.2756242Z 
+e2e	Run e2e tests	2026-11-05T15:46:05.6843815Z   passed [panels] › e2e-playwright/panels-suite/barchart-options.spec.ts:38:7 › Panels test: BarChart options › stacking 100 percent - renders and shows tooltip flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:46:21.1028290Z   passed [panels] › e2e-playwright/panels-suite/barchart-render.spec.ts:10:7 › Panels test: BarChart render › renders successfully flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:46:28.0739289Z   passed [panels] › e2e-playwright/panels-suite/gauge.spec.ts:31:9 › Gauge Panel › successfully migrates all gauge panels
+e2e	Run e2e tests	2026-11-05T15:46:46.4427685Z   failed [panels] › e2e-playwright/panels-suite/barchart-tooltips.spec.ts:12:7 › Panels test: BarChart tooltips › tooltip interactions (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:46:46.4517212Z 
+e2e	Run e2e tests	2026-11-05T15:46:46.4554147Z   Error: uplot is rendered
+e2e	Run e2e tests	2026-11-05T15:46:46.4656594Z 
+e2e	Run e2e tests	2026-11-05T15:46:46.4738200Z   [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T15:46:46.4816630Z 
+e2e	Run e2e tests	2026-11-05T15:46:46.4887148Z   Locator: locator('.uplot').first()
+e2e	Run e2e tests	2026-11-05T15:46:46.4906915Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T15:46:46.5076519Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-05T15:46:46.5097114Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-05T15:46:46.5236857Z 
+e2e	Run e2e tests	2026-11-05T15:46:46.5252982Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:46:46.5441346Z   [2m  - uplot is rendered with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T15:46:46.5622772Z   [2m  - waiting for locator('.uplot').first()[22m
+e2e	Run e2e tests	2026-11-05T15:46:46.5882115Z 
+e2e	Run e2e tests	2026-11-05T15:46:46.5933430Z 
+e2e	Run e2e tests	2026-11-05T15:46:46.6070385Z   [0m [90m 17 |[39m
+e2e	Run e2e tests	2026-11-05T15:46:46.6278092Z    [90m 18 |[39m     [36mconst[39m barchartUplot [33m=[39m page[33m.[39mlocator([32m'.uplot'[39m)[33m.[39mfirst()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:46:46.6438041Z   [31m[1m>[22m[39m[90m 19 |[39m     [36mawait[39m expect(barchartUplot[33m,[39m [32m'uplot is rendered'[39m)[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:46:46.6503410Z    [90m    |[39m                                                      [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:46:46.6641300Z    [90m 20 |[39m
+e2e	Run e2e tests	2026-11-05T15:46:46.6789542Z    [90m 21 |[39m     [36mconst[39m center [33m=[39m [36mawait[39m getUPlotCenterPosition(barchartUplot)[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:46:46.6828494Z    [90m 22 |[39m     [36mconst[39m hoverable [33m=[39m { x[33m:[39m center[33m.[39mx[33m,[39m y[33m:[39m center[33m.[39my [33m-[39m [35m150[39m }[33m;[39m [90m// hover slightly off-center to avoid hitting the pin button[39m[0m
+e2e	Run e2e tests	2026-11-05T15:46:46.6937532Z 
+e2e	Run e2e tests	2026-11-05T15:46:46.7029295Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/barchart-tooltips.spec.ts:19:54
+e2e	Run e2e tests	2026-11-05T15:46:46.7146456Z 
+e2e	Run e2e tests	2026-11-05T15:47:09.9021400Z   failed [panels] › e2e-playwright/panels-suite/gauge.spec.ts:21:9 › Gauge Panel › a11y (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:47:09.9096145Z 
+e2e	Run e2e tests	2026-11-05T15:47:09.9160305Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveCount[2m([22m[32mexpected[39m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T15:47:09.9252062Z 
+e2e	Run e2e tests	2026-11-05T15:47:09.9316991Z   Locator:  locator('[data-testid="data-testid gauge container"]')
+e2e	Run e2e tests	2026-11-05T15:47:09.9340225Z   Expected: [32m39[39m
+e2e	Run e2e tests	2026-11-05T15:47:09.9368204Z   Received: [31m0[39m
+e2e	Run e2e tests	2026-11-05T15:47:09.9370568Z   Timeout:  10000ms
+e2e	Run e2e tests	2026-11-05T15:47:09.9371043Z 
+e2e	Run e2e tests	2026-11-05T15:47:09.9371413Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:47:09.9372328Z   [2m  - Expect "toHaveCount" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T15:47:09.9373588Z   [2m  - waiting for locator('[data-testid="data-testid gauge container"]')[22m
+e2e	Run e2e tests	2026-11-05T15:47:09.9374744Z   [2m    9 × locator resolved to 0 elements[22m
+e2e	Run e2e tests	2026-11-05T15:47:09.9375887Z   [2m      - unexpected value "0"[22m
+e2e	Run e2e tests	2026-11-05T15:47:09.9377608Z 
+e2e	Run e2e tests	2026-11-05T15:47:09.9377787Z 
+e2e	Run e2e tests	2026-11-05T15:47:09.9378446Z   [0m [90m 23 |[39m       [36mawait[39m expect(
+e2e	Run e2e tests	2026-11-05T15:47:09.9380940Z    [90m 24 |[39m         dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mVisualization[39m[33m.[39m[33mGauge[39m[33m.[39m[33mContainer[39m)
+e2e	Run e2e tests	2026-11-05T15:47:09.9384839Z   [31m[1m>[22m[39m[90m 25 |[39m       )[33m.[39mtoHaveCount([33mNEW_GAUGE_DASHBOARD_GAUGE_COUNT[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:47:09.9386554Z    [90m    |[39m         [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:47:09.9388021Z    [90m 26 |[39m       [36mconst[39m results [33m=[39m [36mawait[39m scanForA11yViolations()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:47:09.9390157Z    [90m 27 |[39m       [90m// there's a dashboards issue with this rule right now - headers have aria-role="heading" but are missing aria-level[39m
+e2e	Run e2e tests	2026-11-05T15:47:09.9392504Z    [90m 28 |[39m       expect(results)[33m.[39mtoHaveNoA11yViolations({ ignoredRules[33m:[39m [[32m'aria-required-attr'[39m] })[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T15:47:09.9393630Z 
+e2e	Run e2e tests	2026-11-05T15:47:09.9394704Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/gauge.spec.ts:25:9
+e2e	Run e2e tests	2026-11-05T15:47:09.9426097Z 
+e2e	Run e2e tests	2026-11-05T15:47:21.3255293Z   failed [panels] › e2e-playwright/panels-suite/gauge.spec.ts:45:9 › Gauge Panel › renders new gauge panels (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:47:21.3278206Z 
+e2e	Run e2e tests	2026-11-05T15:47:21.3307329Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveCount[2m([22m[32mexpected[39m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T15:47:21.3336030Z 
+e2e	Run e2e tests	2026-11-05T15:47:21.3336942Z   Locator:  locator('[data-testid="data-testid gauge container"]')
+e2e	Run e2e tests	2026-11-05T15:47:21.3366642Z   Expected: [32m39[39m
+e2e	Run e2e tests	2026-11-05T15:47:21.3396493Z   Received: [31m10[39m
+e2e	Run e2e tests	2026-11-05T15:47:21.3426256Z   Timeout:  10000ms
+e2e	Run e2e tests	2026-11-05T15:47:21.3426792Z 
+e2e	Run e2e tests	2026-11-05T15:47:21.3476483Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:47:21.3526915Z   [2m  - Expect "toHaveCount" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T15:47:21.3557363Z   [2m  - waiting for locator('[data-testid="data-testid gauge container"]')[22m
+e2e	Run e2e tests	2026-11-05T15:47:21.3617199Z   [2m    9 × locator resolved to 0 elements[22m
+e2e	Run e2e tests	2026-11-05T15:47:21.3654967Z   [2m      - unexpected value "0"[22m
+e2e	Run e2e tests	2026-11-05T15:47:21.3716763Z   [2m    - locator resolved to 10 elements[22m
+e2e	Run e2e tests	2026-11-05T15:47:21.3776820Z   [2m    - unexpected value "10"[22m
+e2e	Run e2e tests	2026-11-05T15:47:21.3780122Z 
+e2e	Run e2e tests	2026-11-05T15:47:21.3836157Z 
+e2e	Run e2e tests	2026-11-05T15:47:21.3879577Z   [0m [90m 51 |[39m         selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mVisualization[39m[33m.[39m[33mGauge[39m[33m.[39m[33mContainer[39m
+e2e	Run e2e tests	2026-11-05T15:47:21.3930052Z    [90m 52 |[39m       )[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:47:21.3970527Z   [31m[1m>[22m[39m[90m 53 |[39m       [36mawait[39m expect(gaugeElements)[33m.[39mtoHaveCount([33mNEW_GAUGE_DASHBOARD_GAUGE_COUNT[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:47:21.4040056Z    [90m    |[39m                                   [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:47:21.4084841Z    [90m 54 |[39m
+e2e	Run e2e tests	2026-11-05T15:47:21.4141881Z    [90m 55 |[39m       [90m// check that no panel errors exist[39m
+e2e	Run e2e tests	2026-11-05T15:47:21.4188577Z    [90m 56 |[39m       [36mconst[39m errorInfo [33m=[39m dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mPanel[39m[33m.[39mheaderCornerInfo([32m'error'[39m))[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T15:47:21.4256250Z 
+e2e	Run e2e tests	2026-11-05T15:47:21.4287615Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/gauge.spec.ts:53:35
+e2e	Run e2e tests	2026-11-05T15:47:21.4346056Z 
+e2e	Run e2e tests	2026-11-05T15:47:23.7796542Z   passed [panels] › e2e-playwright/panels-suite/gauge.spec.ts:60:9 › Gauge Panel › renders sparklines in gauge panels flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:47:47.8695167Z   failed [panels] › e2e-playwright/panels-suite/gauge.spec.ts:71:9 › Gauge Panel › data links (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:47:47.8729352Z 
+e2e	Run e2e tests	2026-11-05T15:47:47.8747819Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T15:47:47.8798893Z 
+e2e	Run e2e tests	2026-11-05T15:47:47.8835393Z   Locator: locator('[data-testid="data-testid Data link"]')
+e2e	Run e2e tests	2026-11-05T15:47:47.8884911Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T15:47:47.8898221Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-05T15:47:47.8898944Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-05T15:47:47.8899416Z 
+e2e	Run e2e tests	2026-11-05T15:47:47.8899782Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:47:47.8900842Z   [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T15:47:47.8902064Z   [2m  - waiting for locator('[data-testid="data-testid Data link"]')[22m
+e2e	Run e2e tests	2026-11-05T15:47:47.8902764Z 
+e2e	Run e2e tests	2026-11-05T15:47:47.8902924Z 
+e2e	Run e2e tests	2026-11-05T15:47:47.8903517Z   [0m [90m 77 |[39m       [36mawait[39m expect(
+e2e	Run e2e tests	2026-11-05T15:47:47.8905577Z    [90m 78 |[39m         singleLinkPanel[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mDataLinksContextMenu[39m[33m.[39msingleLink)
+e2e	Run e2e tests	2026-11-05T15:47:47.8931746Z   [31m[1m>[22m[39m[90m 79 |[39m       )[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:47:47.8939789Z    [90m    |[39m         [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:47:47.8940602Z    [90m 80 |[39m
+e2e	Run e2e tests	2026-11-05T15:47:47.8969235Z    [90m 81 |[39m       [36mconst[39m multiLinkPanel [33m=[39m [36mawait[39m gotoDashboardPage({
+e2e	Run e2e tests	2026-11-05T15:47:47.8977407Z    [90m 82 |[39m         uid[33m:[39m [33mNEW_GAUGES_DASHBOARD_UID[39m[33m,[39m[0m
+e2e	Run e2e tests	2026-11-05T15:47:47.8978171Z 
+e2e	Run e2e tests	2026-11-05T15:47:47.8979253Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/gauge.spec.ts:79:9
+e2e	Run e2e tests	2026-11-05T15:47:47.8980127Z 
+e2e	Run e2e tests	2026-11-05T15:47:49.9941146Z   passed [panels] › e2e-playwright/panels-suite/gauge.spec.ts:156:9 › Gauge Panel › handles percentage units
+e2e	Run e2e tests	2026-11-05T15:48:25.5800637Z   failed [panels] › e2e-playwright/panels-suite/gauge.spec.ts:179:9 › Gauge Panel › renders a gauge after reducing a table with a text column (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:48:25.5838953Z 
+e2e	Run e2e tests	2026-11-05T15:48:25.5922860Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T15:48:25.5967926Z 
+e2e	Run e2e tests	2026-11-05T15:48:25.6123128Z   Locator: locator('[data-testid="data-testid gauge container"]')
+e2e	Run e2e tests	2026-11-05T15:48:25.6224567Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T15:48:25.6288315Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-05T15:48:25.6393691Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-05T15:48:25.6431378Z 
+e2e	Run e2e tests	2026-11-05T15:48:25.6505276Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:48:25.6564115Z   [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T15:48:25.6654567Z   [2m  - waiting for locator('[data-testid="data-testid gauge container"]')[22m
+e2e	Run e2e tests	2026-11-05T15:48:25.6706943Z 
+e2e	Run e2e tests	2026-11-05T15:48:25.6806769Z 
+e2e	Run e2e tests	2026-11-05T15:48:25.6987586Z   [0m [90m 234 |[39m       [36mawait[39m expect(
+e2e	Run e2e tests	2026-11-05T15:48:25.7121300Z    [90m 235 |[39m         dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mVisualization[39m[33m.[39m[33mGauge[39m[33m.[39m[33mContainer[39m)
+e2e	Run e2e tests	2026-11-05T15:48:25.7227343Z   [31m[1m>[22m[39m[90m 236 |[39m       )[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:48:25.7287461Z    [90m     |[39m         [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:48:25.7444448Z    [90m 237 |[39m       [36mawait[39m expect(
+e2e	Run e2e tests	2026-11-05T15:48:25.7518390Z    [90m 238 |[39m         dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mPanel[39m[33m.[39mtitle([32m'Requests by code'[39m))
+e2e	Run e2e tests	2026-11-05T15:48:25.7637734Z    [90m 239 |[39m       )[33m.[39mtoBeVisible()[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T15:48:25.7642290Z 
+e2e	Run e2e tests	2026-11-05T15:48:25.7757283Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/gauge.spec.ts:236:9
+e2e	Run e2e tests	2026-11-05T15:48:25.7817562Z 
+e2e	Run e2e tests	2026-11-05T15:48:30.0476456Z   failed [panels] › e2e-playwright/panels-suite/gauge.spec.ts:101:9 › Gauge Panel › "no data" (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:48:30.0498524Z 
+e2e	Run e2e tests	2026-11-05T15:48:30.0528024Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:48:30.0556225Z 
+e2e	Run e2e tests	2026-11-05T15:48:30.0577687Z 
+e2e	Run e2e tests	2026-11-05T15:48:30.0597019Z 
+e2e	Run e2e tests	2026-11-05T15:48:46.3279047Z   passed [panels] › e2e-playwright/panels-suite/histogram.spec.ts:9:7 › Panels test: Histogram › renders successfully flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:49:08.0351518Z   passed [panels] › e2e-playwright/panels-suite/histogram.spec.ts:56:9 › Panels test: Histogram › a11y › run a11y report
+e2e	Run e2e tests	2026-11-05T15:49:11.1540010Z   failed [panels] › e2e-playwright/panels-suite/histogram.spec.ts:29:9 › Panels test: Histogram › panel options › legend (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:49:11.1564666Z 
+e2e	Run e2e tests	2026-11-05T15:49:11.1566024Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:49:11.1567367Z 
+e2e	Run e2e tests	2026-11-05T15:49:11.1567487Z 
+e2e	Run e2e tests	2026-11-05T15:49:11.1567594Z 
+e2e	Run e2e tests	2026-11-05T15:49:11.1567706Z 
+e2e	Run e2e tests	2026-11-05T15:49:11.1568467Z   Error: expect.not.toBeVisible: Target page, context or browser has been closed
+e2e	Run e2e tests	2026-11-05T15:49:11.1569507Z 
+e2e	Run e2e tests	2026-11-05T15:49:11.1570761Z   [0m [90m 49 |[39m       [36mawait[39m expect(legendVisibilitySwitch)[33m.[39mnot[33m.[39mtoBeChecked()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:49:11.1571964Z    [90m 50 |[39m
+e2e	Run e2e tests	2026-11-05T15:49:11.1573948Z   [31m[1m>[22m[39m[90m 51 |[39m       [36mawait[39m expect(legend[33m,[39m [32m'legend is no longer visible'[39m)[33m.[39mnot[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:49:11.1576048Z    [90m    |[39m                                                               [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:49:11.1577138Z    [90m 52 |[39m     })[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:49:11.1581266Z    [90m 53 |[39m   })[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:49:11.1582021Z    [90m 54 |[39m[0m
+e2e	Run e2e tests	2026-11-05T15:49:11.1582405Z 
+e2e	Run e2e tests	2026-11-05T15:49:11.1583531Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/histogram.spec.ts:51:63
+e2e	Run e2e tests	2026-11-05T15:49:11.1584428Z 
+e2e	Run e2e tests	2026-11-05T15:49:37.1559416Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transforms.spec.ts:13:9 › Panels test: Transformations › Tests transformations editor
+e2e	Run e2e tests	2026-11-05T15:49:46.9377552Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transforms.spec.ts:29:9 › Panels test: Transformations › Tests case where transformations can be disabled and not clear out panel data
+e2e	Run e2e tests	2026-11-05T15:49:58.9696314Z   failed [panels] › e2e-playwright/panels-suite/panelEdit_base.spec.ts:13:9 › Panels test: Panel edit base › Tests various Panel edit scenarios (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:49:58.9804399Z 
+e2e	Run e2e tests	2026-11-05T15:49:58.9883602Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:49:58.9986387Z 
+e2e	Run e2e tests	2026-11-05T15:49:59.0047169Z 
+e2e	Run e2e tests	2026-11-05T15:49:59.0091339Z 
+e2e	Run e2e tests	2026-11-05T15:49:59.0125053Z 
+e2e	Run e2e tests	2026-11-05T15:49:59.0187682Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T15:49:59.0225667Z 
+e2e	Run e2e tests	2026-11-05T15:49:59.0246843Z   Locator:  locator('[data-testid="data-testid Tab Queries"]')
+e2e	Run e2e tests	2026-11-05T15:49:59.0271147Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T15:49:59.0297812Z   Received: undefined
+e2e	Run e2e tests	2026-11-05T15:49:59.0326020Z 
+e2e	Run e2e tests	2026-11-05T15:49:59.0356516Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:49:59.0368740Z   [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T15:49:59.0391706Z   [2m  - waiting for locator('[data-testid="data-testid Tab Queries"]')[22m
+e2e	Run e2e tests	2026-11-05T15:49:59.0392393Z 
+e2e	Run e2e tests	2026-11-05T15:49:59.0392574Z 
+e2e	Run e2e tests	2026-11-05T15:49:59.0395561Z   [0m [90m 34 |[39m
+e2e	Run e2e tests	2026-11-05T15:49:59.0481524Z    [90m 35 |[39m       [90m// Check that Queries tab is visible and active[39m
+e2e	Run e2e tests	2026-11-05T15:49:59.0488885Z   [31m[1m>[22m[39m[90m 36 |[39m       [36mawait[39m expect(dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mTab[39m[33m.[39mtitle([32m'Queries'[39m)))[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:49:59.0518634Z    [90m    |[39m                                                                                                   [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:49:59.0536939Z    [90m 37 |[39m       [36mawait[39m expect(page[33m.[39mlocator(selectors[33m.[39mcomponents[33m.[39m[33mTab[39m[33m.[39mactive([32m''[39m)))[33m.[39mtoContainText([32m'Queries1'[39m)[33m;[39m [90m// there's already a query so therefore Query + 1[39m
+e2e	Run e2e tests	2026-11-05T15:49:59.0539028Z    [90m 38 |[39m
+e2e	Run e2e tests	2026-11-05T15:49:59.0557083Z    [90m 39 |[39m       [90m// Check query content is visible and other tabs are not[39m[0m
+e2e	Run e2e tests	2026-11-05T15:49:59.0626352Z 
+e2e	Run e2e tests	2026-11-05T15:49:59.0668211Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/panelEdit_base.spec.ts:36:99
+e2e	Run e2e tests	2026-11-05T15:49:59.0730819Z 
+e2e	Run e2e tests	2026-11-05T15:50:11.3980827Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transforms.spec.ts:48:9 › Panels test: Transformations › Group by editor mounts in the legacy panel edit flow
+e2e	Run e2e tests	2026-11-05T15:50:16.0132465Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transforms.spec.ts:65:9 › Panels test: Transformations › Merge series/tables stays applicable for a single-series input
+e2e	Run e2e tests	2026-11-05T15:50:16.1251247Z   failed [panels] › e2e-playwright/panels-suite/panelEdit_queries.spec.ts:11:9 › Panels test: Queries › Tests various Panel edit queries scenarios (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:50:16.1337251Z 
+e2e	Run e2e tests	2026-11-05T15:50:16.1378541Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:50:16.1410841Z 
+e2e	Run e2e tests	2026-11-05T15:50:16.1556486Z 
+e2e	Run e2e tests	2026-11-05T15:50:16.1656348Z 
+e2e	Run e2e tests	2026-11-05T15:50:16.1756331Z 
+e2e	Run e2e tests	2026-11-05T15:50:16.1907571Z   Error: locator.click: Target page, context or browser has been closed
+e2e	Run e2e tests	2026-11-05T15:50:16.1966515Z 
+e2e	Run e2e tests	2026-11-05T15:50:16.2087947Z   [0m [90m 109 |[39m ) [33m=>[39m {
+e2e	Run e2e tests	2026-11-05T15:50:16.2199679Z    [90m 110 |[39m   [36mawait[39m dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mQueryTab[39m[33m.[39mqueryInspectorButton)[33m.[39mclick()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:50:16.2207425Z   [31m[1m>[22m[39m[90m 111 |[39m   [36mawait[39m dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanelInspector[39m[33m.[39m[33mQuery[39m[33m.[39mrefreshButton)[33m.[39mclick()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:50:16.2227858Z    [90m     |[39m                                                                                                     [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:50:16.2256924Z    [90m 112 |[39m
+e2e	Run e2e tests	2026-11-05T15:50:16.2278634Z    [90m 113 |[39m   [36mconst[39m keys [33m=[39m page[33m.[39mlocator(selectors[33m.[39mcomponents[33m.[39m[33mPanelInspector[39m[33m.[39m[33mQuery[39m[33m.[39mjsonObjectKeys([32m''[39m))[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:50:16.2318285Z    [90m 114 |[39m   [36mawait[39m expect(keys[33m.[39mfirst())[33m.[39mtoBeVisible()[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T15:50:16.2326316Z 
+e2e	Run e2e tests	2026-11-05T15:50:16.2378065Z       at expectInspectorResultAndClose (/home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/panelEdit_queries.spec.ts:111:101)
+e2e	Run e2e tests	2026-11-05T15:50:16.2380587Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/panelEdit_queries.spec.ts:89:7
+e2e	Run e2e tests	2026-11-05T15:50:16.2416226Z 
+e2e	Run e2e tests	2026-11-05T15:50:31.3004934Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transforms.spec.ts:81:9 › Panels test: Transformations › Format time is flagged as not applicable in the legacy picker
+e2e	Run e2e tests	2026-11-05T15:50:31.6274339Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transforms.spec.ts:98:9 › Panels test: Transformations › Organize fields hides only the time field that is hidden
+e2e	Run e2e tests	2026-11-05T15:50:38.1279642Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:10:7 › Panels test: Stat › renders successfully
+e2e	Run e2e tests	2026-11-05T15:50:49.3875829Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:29:7 › Panels test: Stat › "no data"
+e2e	Run e2e tests	2026-11-05T15:50:53.9817110Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:52:7 › Panels test: Stat › sparkline: area mode renders a chart per series
+e2e	Run e2e tests	2026-11-05T15:50:55.0238324Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:68:7 › Panels test: Stat › sparkline: line mode renders a chart per series
+e2e	Run e2e tests	2026-11-05T15:50:58.9294693Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:84:7 › Panels test: Stat › sparkline: no chart when graphMode is none
+e2e	Run e2e tests	2026-11-05T15:51:14.8891854Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:100:7 › Panels test: Stat › text mode: name displays series names
+e2e	Run e2e tests	2026-11-05T15:51:15.5201279Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:116:7 › Panels test: Stat › text mode: value with 45 series renders without errors
+e2e	Run e2e tests	2026-11-05T15:51:17.3418777Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:135:7 › Panels test: Stat › text mode: none with 200 series renders without errors
+e2e	Run e2e tests	2026-11-05T15:51:22.2656533Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:151:7 › Panels test: Stat › color mode: background renders without errors
+e2e	Run e2e tests	2026-11-05T15:51:36.4724178Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:167:7 › Panels test: Stat › color mode: value renders without errors
+e2e	Run e2e tests	2026-11-05T15:51:37.6171911Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:183:7 › Panels test: Stat › percent change: positive value shows upward arrow
+e2e	Run e2e tests	2026-11-05T15:51:37.7988302Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:197:7 › Panels test: Stat › percent change: zero shows no directional arrow
+e2e	Run e2e tests	2026-11-05T15:51:42.6238339Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:219:7 › Panels test: Stat › percent change: NaN is not displayed
+e2e	Run e2e tests	2026-11-05T15:52:00.5947203Z   passed [panels] › e2e-playwright/panels-suite/stat.spec.ts:238:7 › Panels test: Stat › data link: single link wraps each stat cell as anchor
+e2e	Run e2e tests	2026-11-05T15:52:06.7908397Z   passed [panels] › e2e-playwright/panels-suite/state-timeline.spec.ts:24:7 › Panels test: StateTimeine › "no data"
+e2e	Run e2e tests	2026-11-05T15:52:21.3128871Z   passed [panels] › e2e-playwright/panels-suite/state-timeline.spec.ts:46:7 › Panels test: StateTimeine › tooltip interactions
+e2e	Run e2e tests	2026-11-05T15:52:29.4597110Z   passed [panels] › e2e-playwright/panels-suite/status-history.spec.ts:10:7 › Panels test: StatusHistory › renders successfully
+e2e	Run e2e tests	2026-11-05T15:52:30.0583562Z   passed [panels] › e2e-playwright/panels-suite/state-timeline.spec.ts:102:7 › Panels test: State Timeline X-axis panning › x-axis panning functionality
+e2e	Run e2e tests	2026-11-05T15:52:36.6188291Z   passed [panels] › e2e-playwright/panels-suite/state-timeline.spec.ts:10:7 › Panels test: StateTimeine › renders successfully flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:52:48.9776838Z   passed [panels] › e2e-playwright/panels-suite/status-history.spec.ts:24:7 › Panels test: StatusHistory › "no data"
+e2e	Run e2e tests	2026-11-05T15:53:02.8008985Z   passed [panels] › e2e-playwright/panels-suite/status-history.spec.ts:100:7 › Panels test: Status History X-axis panning › x-axis panning functionality
+e2e	Run e2e tests	2026-11-05T15:53:03.8131198Z   passed [panels] › e2e-playwright/panels-suite/status-history.spec.ts:46:7 › Panels test: StatusHistory › tooltip interactions
+e2e	Run e2e tests	2026-11-05T15:53:09.0432843Z   passed [panels] › e2e-playwright/panels-suite/table-footer.spec.ts:10:7 › Panels test: Table - Footer › Footer affected by filtering
+e2e	Run e2e tests	2026-11-05T15:53:22.1878066Z   passed [panels] › e2e-playwright/panels-suite/table-footer.spec.ts:55:7 › Panels test: Table - Footer › Footer unaffected by sorting
+e2e	Run e2e tests	2026-11-05T15:53:31.4493532Z   passed [panels] › e2e-playwright/panels-suite/table-footer.spec.ts:105:7 › Panels test: Table - Footer › Count rows for normal case
+e2e	Run e2e tests	2026-11-05T15:53:32.6030331Z   passed [panels] › e2e-playwright/panels-suite/table-footer.spec.ts:125:7 › Panels test: Table - Footer › Count rows with a few hidden columns
+e2e	Run e2e tests	2026-11-05T15:54:06.1591413Z   passed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:150:7 › Panels test: Table - Kitchen Sink › Tests sorting by column
+e2e	Run e2e tests	2026-11-05T15:54:06.8142037Z   passed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:109:7 › Panels test: Table - Kitchen Sink › Tests visibility and display name via overrides
+e2e	Run e2e tests	2026-11-05T15:54:38.2909842Z   failed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:35:7 › Panels test: Table - Kitchen Sink › a11y (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:54:38.2986718Z 
+e2e	Run e2e tests	2026-11-05T15:54:38.3057308Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:54:38.3240921Z 
+e2e	Run e2e tests	2026-11-05T15:54:38.3417768Z 
+e2e	Run e2e tests	2026-11-05T15:54:38.3695854Z 
+e2e	Run e2e tests	2026-11-05T15:54:40.4188361Z   passed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:176:7 › Panels test: Table - Kitchen Sink › Tests filtering within a column
+e2e	Run e2e tests	2026-11-05T15:54:41.1153346Z   failed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:47:7 › Panels test: Table - Kitchen Sink › Tests word wrap, hover overflow, max cell height, and cell inspect (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:54:41.1165163Z 
+e2e	Run e2e tests	2026-11-05T15:54:41.1167096Z   Error: Test timeout of 30000ms exceeded
+e2e	Run e2e tests	2026-11-05T15:54:41.1167684Z 
+e2e	Run e2e tests	2026-11-05T15:54:41.1168603Z   [0m [90m 73 |[39m     [36mawait[39m expect([36masync[39m () [33m=>[39m {
+e2e	Run e2e tests	2026-11-05T15:54:41.1171152Z    [90m 74 |[39m       [36mawait[39m expect(getCellHeight(table[33m,[39m [35m1[39m[33m,[39m longTextColIdx))[33m.[39mresolves[33m.[39mtoBeLessThan([35m100[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:54:41.1175028Z   [31m[1m>[22m[39m[90m 75 |[39m     })[33m.[39mtoPass()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:54:41.1198810Z    [90m    |[39m        [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:54:41.1200146Z    [90m 76 |[39m     [36mawait[39m maxRowHeightInput[33m.[39mclear()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:54:41.1201166Z    [90m 77 |[39m
+e2e	Run e2e tests	2026-11-05T15:54:41.1202655Z    [90m 78 |[39m     [90m// toggle the lorem ipsum column's wrap text toggle and confirm that the height shrinks.[39m[0m
+e2e	Run e2e tests	2026-11-05T15:54:41.1203663Z 
+e2e	Run e2e tests	2026-11-05T15:54:41.1204890Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/table-kitchenSink.spec.ts:75:8
+e2e	Run e2e tests	2026-11-05T15:54:41.1206145Z 
+e2e	Run e2e tests	2026-11-05T15:55:26.7773295Z   failed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:215:7 › Panels test: Table - Kitchen Sink › Tests pagination, row height adjustment (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:55:26.7826438Z 
+e2e	Run e2e tests	2026-11-05T15:55:26.7895454Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:55:26.7922490Z 
+e2e	Run e2e tests	2026-11-05T15:55:26.7933240Z 
+e2e	Run e2e tests	2026-11-05T15:55:26.7933488Z 
+e2e	Run e2e tests	2026-11-05T15:55:26.7934148Z 
+e2e	Run e2e tests	2026-11-05T15:55:26.7935045Z   Error: locator.textContent: Target page, context or browser has been closed
+e2e	Run e2e tests	2026-11-05T15:55:26.7949981Z 
+e2e	Run e2e tests	2026-11-05T15:55:26.7976210Z   [0m [90m 216 |[39m     [36mconst[39m rowRe [33m=[39m [35m/([\d]+) - ([\d]+) of ([\d]+) rows/[39m[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:55:26.8003794Z    [90m 217 |[39m     [36mconst[39m getRowStatus [33m=[39m [36masync[39m (page[33m:[39m [33mPage[39m [33m|[39m [33mLocator[39m) [33m=>[39m {
+e2e	Run e2e tests	2026-11-05T15:55:26.8030220Z   [31m[1m>[22m[39m[90m 218 |[39m       [36mconst[39m text [33m=[39m ([36mawait[39m page[33m.[39mgetByText(rowRe)[33m.[39mtextContent()) [33m?[39m[33m?[39m [32m''[39m[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:55:26.8054439Z    [90m     |[39m                                                 [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:55:26.8087548Z    [90m 219 |[39m       [36mconst[39m match [33m=[39m text[33m.[39mmatch(rowRe)[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:55:26.8123078Z    [90m 220 |[39m       [36mreturn[39m {
+e2e	Run e2e tests	2026-11-05T15:55:26.8173257Z    [90m 221 |[39m         start[33m:[39m parseInt(match[33m?[39m[33m.[39m[[35m1[39m] [33m?[39m[33m?[39m [32m'0'[39m[33m,[39m [35m10[39m)[33m,[39m[0m
+e2e	Run e2e tests	2026-11-05T15:55:26.8212665Z 
+e2e	Run e2e tests	2026-11-05T15:55:26.8235612Z       at getRowStatus (/home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/table-kitchenSink.spec.ts:218:49)
+e2e	Run e2e tests	2026-11-05T15:55:26.8270837Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/table-kitchenSink.spec.ts:248:34
+e2e	Run e2e tests	2026-11-05T15:55:26.8299274Z 
+e2e	Run e2e tests	2026-11-05T15:56:00.1326050Z   failed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:277:7 › Panels test: Table - Kitchen Sink › Tests DataLinks (single and multi) and actions (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:56:00.1331880Z 
+e2e	Run e2e tests	2026-11-05T15:56:00.1379005Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T15:56:00.1383047Z 
+e2e	Run e2e tests	2026-11-05T15:56:00.1383837Z   Locator: locator('[data-testid="data-testid Panel header Table - Kitchen Sink"]')
+e2e	Run e2e tests	2026-11-05T15:56:00.1384939Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T15:56:00.1385601Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-05T15:56:00.1393100Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-05T15:56:00.1401814Z 
+e2e	Run e2e tests	2026-11-05T15:56:00.1402235Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:56:00.1403215Z   [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T15:56:00.1404593Z   [2m  - waiting for locator('[data-testid="data-testid Panel header Table - Kitchen Sink"]')[22m
+e2e	Run e2e tests	2026-11-05T15:56:00.1405540Z 
+e2e	Run e2e tests	2026-11-05T15:56:00.1405973Z 
+e2e	Run e2e tests	2026-11-05T15:56:00.1406634Z   [0m [90m 318 |[39m     [36mawait[39m expect(
+e2e	Run e2e tests	2026-11-05T15:56:00.1409165Z    [90m 319 |[39m       dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mPanel[39m[33m.[39mtitle([32m'Table - Kitchen Sink'[39m))
+e2e	Run e2e tests	2026-11-05T15:56:00.1437403Z   [31m[1m>[22m[39m[90m 320 |[39m     )[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:56:00.1454183Z    [90m     |[39m       [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:56:00.1478025Z    [90m 321 |[39m
+e2e	Run e2e tests	2026-11-05T15:56:00.1479167Z    [90m 322 |[39m     [36mawait[39m waitForTableLoad(page)[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:56:00.1480181Z    [90m 323 |[39m[0m
+e2e	Run e2e tests	2026-11-05T15:56:00.1480682Z 
+e2e	Run e2e tests	2026-11-05T15:56:00.1481989Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/table-kitchenSink.spec.ts:320:7
+e2e	Run e2e tests	2026-11-05T15:56:00.1483044Z 
+e2e	Run e2e tests	2026-11-05T15:56:02.6504514Z   failed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:376:7 › Panels test: Table - Kitchen Sink › Cross-filter: second filter popup only shows values reachable after first filter (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:56:02.6556184Z 
+e2e	Run e2e tests	2026-11-05T15:56:02.6606546Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:56:02.6665051Z 
+e2e	Run e2e tests	2026-11-05T15:56:02.6713376Z 
+e2e	Run e2e tests	2026-11-05T15:56:02.6768329Z 
+e2e	Run e2e tests	2026-11-05T15:56:02.6794034Z 
+e2e	Run e2e tests	2026-11-05T15:56:02.6883394Z   Error: expect.toHaveAttribute: Target page, context or browser has been closed
+e2e	Run e2e tests	2026-11-05T15:56:02.6906041Z 
+e2e	Run e2e tests	2026-11-05T15:56:02.6931532Z   [0m [90m 416 |[39m     [36mconst[39m infoHeader [33m=[39m page[33m.[39mgetByRole([32m'columnheader'[39m)[33m.[39mnth(infoColumnIdx)[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:56:02.6987345Z    [90m 417 |[39m     [36mawait[39m infoHeader[33m.[39mgetByText([32m'Info'[39m)[33m.[39mclick()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:56:02.7047764Z   [31m[1m>[22m[39m[90m 418 |[39m     [36mawait[39m expect(infoHeader[33m,[39m [32m'info column header is sorted ascending after click'[39m)[33m.[39mtoHaveAttribute(
+e2e	Run e2e tests	2026-11-05T15:56:02.7087915Z    [90m     |[39m                                                                                    [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:56:02.7149738Z    [90m 419 |[39m       [32m'aria-sort'[39m[33m,[39m
+e2e	Run e2e tests	2026-11-05T15:56:02.7196902Z    [90m 420 |[39m       [32m'ascending'[39m
+e2e	Run e2e tests	2026-11-05T15:56:02.7256770Z    [90m 421 |[39m     )[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T15:56:02.7279612Z 
+e2e	Run e2e tests	2026-11-05T15:56:02.7342617Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/table-kitchenSink.spec.ts:418:84
+e2e	Run e2e tests	2026-11-05T15:56:02.7364537Z 
+e2e	Run e2e tests	2026-11-05T15:56:05.6073392Z   passed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:519:7 › Panels test: Table - Kitchen Sink › Tooltip from field picker can be cleared
+e2e	Run e2e tests	2026-11-05T15:56:20.2869746Z   failed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:456:7 › Panels test: Table - Kitchen Sink › Tests tooltip interactions (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:56:20.2975268Z 
+e2e	Run e2e tests	2026-11-05T15:56:20.3049017Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:56:20.3093072Z 
+e2e	Run e2e tests	2026-11-05T15:56:20.3247046Z 
+e2e	Run e2e tests	2026-11-05T15:56:20.3386916Z 
+e2e	Run e2e tests	2026-11-05T15:56:38.1920488Z   passed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:593:7 › Panels test: Table - Kitchen Sink › Empty Table panel
+e2e	Run e2e tests	2026-11-05T15:56:41.3058410Z   passed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:607:7 › Panels test: Table - Kitchen Sink › Multi-frame table: frame selector combobox switches active frame
+e2e	Run e2e tests	2026-11-05T15:56:55.5026849Z   passed [panels] › e2e-playwright/panels-suite/table-markdown.spec.ts:17:9 › Panels test: Table - Markdown › Tests Markdown tables are successfully rendered
+e2e	Run e2e tests	2026-11-05T15:57:10.0433767Z   passed [panels] › e2e-playwright/panels-suite/table-markdown.spec.ts:26:9 › Panels test: Table - Markdown › Tests dynamic height and max row height
+e2e	Run e2e tests	2026-11-05T15:57:24.3918163Z   passed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:42:7 › Panels test: Table - Nested › expand and collapse
+e2e	Run e2e tests	2026-11-05T15:57:28.6667464Z   failed [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:547:7 › Panels test: Table - Kitchen Sink › Styling overrides with styling from field (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:57:28.6746993Z 
+e2e	Run e2e tests	2026-11-05T15:57:28.6797177Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:57:28.6855946Z 
+e2e	Run e2e tests	2026-11-05T15:57:28.6876396Z 
+e2e	Run e2e tests	2026-11-05T15:57:28.6886469Z 
+e2e	Run e2e tests	2026-11-05T15:57:41.2619225Z   passed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:67:7 › Panels test: Table - Nested › sorting
+e2e	Run e2e tests	2026-11-05T15:58:00.6909657Z   passed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:116:7 › Panels test: Table - Nested › filtering in a nested table
+e2e	Run e2e tests	2026-11-05T15:58:26.9288167Z   failed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:11:7 › Panels test: Table - Nested › a11y (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:58:26.9386296Z 
+e2e	Run e2e tests	2026-11-05T15:58:26.9467283Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:58:26.9556075Z 
+e2e	Run e2e tests	2026-11-05T15:58:26.9656074Z 
+e2e	Run e2e tests	2026-11-05T15:58:26.9746026Z 
+e2e	Run e2e tests	2026-11-05T15:58:27.0348467Z   passed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:199:7 › Panels test: Table - Nested › cross-filter in nested table: second filter popup shows only values from filtered rows
+e2e	Run e2e tests	2026-11-05T15:58:27.7082874Z   passed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:388:7 › Panels test: Table - Nested › renamed field appears as column in nested table
+e2e	Run e2e tests	2026-11-05T15:59:13.6094174Z   passed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:476:7 › Panels test: Table - Nested › expand nested rows by default flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:59:57.5598487Z   failed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:409:7 › Panels test: Table - Nested › datalinks resolve field variables in nested table context (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:59:57.5687317Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.5708727Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:59:57.5756001Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.5770993Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.5820313Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.5847850Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.5880216Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T15:59:57.5936004Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.5981369Z   Locator: locator('.rdg:not([aria-hidden="true"])').first()
+e2e	Run e2e tests	2026-11-05T15:59:57.6038355Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T15:59:57.6056456Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-05T15:59:57.6056816Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.6057006Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:59:57.6057924Z   [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T15:59:57.6058962Z   [2m  - waiting for locator('.rdg:not([aria-hidden="true"])').first()[22m
+e2e	Run e2e tests	2026-11-05T15:59:57.6059487Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.6059500Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.6059931Z      at e2e-playwright/panels-suite/table-utils.ts:36
+e2e	Run e2e tests	2026-11-05T15:59:57.6076773Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.6077110Z   [0m [90m 34 |[39m
+e2e	Run e2e tests	2026-11-05T15:59:57.6078797Z    [90m 35 |[39m [36mexport[39m [36mconst[39m waitForTableLoad [33m=[39m [36masync[39m (loc[33m:[39m [33mPage[39m [33m|[39m [33mLocator[39m) [33m=>[39m {
+e2e	Run e2e tests	2026-11-05T15:59:57.6081165Z   [31m[1m>[22m[39m[90m 36 |[39m   [36mawait[39m expect(loc[33m.[39mlocator([32m'.rdg:not([aria-hidden="true"])'[39m)[33m.[39mfirst())[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:59:57.6082866Z    [90m    |[39m                                                                       [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:59:57.6083651Z    [90m 37 |[39m }[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:59:57.6084162Z    [90m 38 |[39m
+e2e	Run e2e tests	2026-11-05T15:59:57.6101798Z    [90m 39 |[39m [90m/**[39m[0m
+e2e	Run e2e tests	2026-11-05T15:59:57.6126047Z 
+e2e	Run e2e tests	2026-11-05T15:59:57.6160709Z       at waitForTableLoad (/home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/table-utils.ts:36:71)
+e2e	Run e2e tests	2026-11-05T15:59:57.6197055Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/table-nested.spec.ts:457:27
+e2e	Run e2e tests	2026-11-05T15:59:57.6227577Z 
+e2e	Run e2e tests	2026-11-05T15:59:58.4143905Z   failed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:504:7 › Panels test: Table - Nested › tooltip from field (2 attempts)
+e2e	Run e2e tests	2026-11-05T15:59:58.4236145Z 
+e2e	Run e2e tests	2026-11-05T15:59:58.4297296Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T15:59:58.4365335Z 
+e2e	Run e2e tests	2026-11-05T15:59:58.4407070Z 
+e2e	Run e2e tests	2026-11-05T15:59:58.4485279Z 
+e2e	Run e2e tests	2026-11-05T15:59:58.4576751Z 
+e2e	Run e2e tests	2026-11-05T15:59:58.4689618Z   Error: locator.hover: Test timeout of 30000ms exceeded.
+e2e	Run e2e tests	2026-11-05T15:59:58.4732416Z   Call log:
+e2e	Run e2e tests	2026-11-05T15:59:58.4852771Z   [2m  - waiting for locator('[data-testid="data-testid Panel header Table - Nested Kitchen Sink"]')[22m
+e2e	Run e2e tests	2026-11-05T15:59:58.4908450Z   [2m    - locator resolved to <section tabindex="0" aria-labelledby="_r_1m_" class="css-7ydxfo-panel-container" data-testid="data-testid Panel header Table - Nested Kitchen Sink">…</section>[22m
+e2e	Run e2e tests	2026-11-05T15:59:58.4936380Z   [2m  - attempting hover action[22m
+e2e	Run e2e tests	2026-11-05T15:59:58.4977582Z   [2m    - waiting for element to be visible and stable[22m
+e2e	Run e2e tests	2026-11-05T15:59:58.5056825Z   [2m    - element is visible and stable[22m
+e2e	Run e2e tests	2026-11-05T15:59:58.5097573Z   [2m    - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-05T15:59:58.5220386Z   [2m    - done scrolling[22m
+e2e	Run e2e tests	2026-11-05T15:59:58.5306116Z 
+e2e	Run e2e tests	2026-11-05T15:59:58.5406209Z 
+e2e	Run e2e tests	2026-11-05T15:59:58.5539903Z   [0m [90m 528 |[39m     [36mawait[39m panelEditPage
+e2e	Run e2e tests	2026-11-05T15:59:58.5698786Z    [90m 529 |[39m       [33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mPanel[39m[33m.[39mtitle([32m'Table - Nested Kitchen Sink'[39m))
+e2e	Run e2e tests	2026-11-05T15:59:58.5847150Z   [31m[1m>[22m[39m[90m 530 |[39m       [33m.[39mhover()[33m;[39m
+e2e	Run e2e tests	2026-11-05T15:59:58.5965619Z    [90m     |[39m        [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T15:59:58.6016635Z    [90m 531 |[39m
+e2e	Run e2e tests	2026-11-05T15:59:58.6135548Z    [90m 532 |[39m     [36mawait[39m expect(
+e2e	Run e2e tests	2026-11-05T15:59:58.6217878Z    [90m 533 |[39m       panelEditPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mVisualization[39m[33m.[39m[33mTableNG[39m[33m.[39m[33mTooltip[39m[33m.[39m[33mWrapper[39m)[0m
+e2e	Run e2e tests	2026-11-05T15:59:58.6311264Z 
+e2e	Run e2e tests	2026-11-05T15:59:58.6407972Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/table-nested.spec.ts:530:8
+e2e	Run e2e tests	2026-11-05T15:59:58.6492518Z 
+e2e	Run e2e tests	2026-11-05T16:00:06.2804371Z   passed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:578:7 › Panels test: Table - Nested › no rows but nested transform renders empty state without crashing flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:00:22.9578662Z   passed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:604:7 › Panels test: Table - Nested › group to nested tables with a count aggregation and no rows
+e2e	Run e2e tests	2026-11-05T16:00:26.5625434Z   passed [panels] › e2e-playwright/panels-suite/table-sparkline.spec.ts:6:7 › Panels test: Table - Sparkline › Tests sparkline tables are successfully rendered
+e2e	Run e2e tests	2026-11-05T16:00:27.5614279Z   passed [panels] › e2e-playwright/panels-suite/timeseries-faceted-labels-filter.spec.ts:7:7 › TimeSeries faceted labels filter › filter toggle appears and opens popover with label sections
+e2e	Run e2e tests	2026-11-05T16:00:44.7289310Z   passed [panels] › e2e-playwright/panels-suite/timeseries-faceted-labels-filter.spec.ts:29:7 › TimeSeries faceted labels filter › selecting a name filters legend series
+e2e	Run e2e tests	2026-11-05T16:00:49.3385432Z   passed [panels] › e2e-playwright/panels-suite/timeseries-faceted-labels-filter.spec.ts:41:7 › TimeSeries faceted labels filter › clear all resets filter
+e2e	Run e2e tests	2026-11-05T16:00:49.9279410Z   passed [panels] › e2e-playwright/panels-suite/timeseries-faceted-labels-filter.spec.ts:57:7 › TimeSeries faceted labels filter › select all selects all values for a key
+e2e	Run e2e tests	2026-11-05T16:01:11.9918430Z   passed [panels] › e2e-playwright/panels-suite/timeseries-faceted-labels-filter.spec.ts:90:7 › TimeSeries faceted labels filter › pin to sidebar docks the filter
+e2e	Run e2e tests	2026-11-05T16:01:13.7599038Z   passed [panels] › e2e-playwright/panels-suite/timeseries-faceted-labels-filter.spec.ts:70:7 › TimeSeries faceted labels filter › filter becomes dimmed when legend item is clicked
+e2e	Run e2e tests	2026-11-05T16:01:16.0370085Z   passed [panels] › e2e-playwright/panels-suite/timeseries-mouse-zoom-interaction.spec.ts:6:7 › Panels test: Timeseries zoom interaction › shows zoom cursor during x-axis drag-to-zoom interaction
+e2e	Run e2e tests	2026-11-05T16:01:32.9854075Z   failed [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:322:7 › Panels test: Table - Nested › word wrap, hover overflow, max cell height, and cell inspect (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:01:32.9896683Z 
+e2e	Run e2e tests	2026-11-05T16:01:32.9954325Z   [31mTest timeout of 90000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T16:01:33.0024149Z 
+e2e	Run e2e tests	2026-11-05T16:01:33.0082894Z 
+e2e	Run e2e tests	2026-11-05T16:01:33.0083441Z 
+e2e	Run e2e tests	2026-11-05T16:01:33.0109078Z 
+e2e	Run e2e tests	2026-11-05T16:01:33.0135015Z   Error: locator.click: Test timeout of 90000ms exceeded.
+e2e	Run e2e tests	2026-11-05T16:01:33.0157336Z   Call log:
+e2e	Run e2e tests	2026-11-05T16:01:33.0188289Z   [2m  - waiting for locator('[data-testid="data-testid Cell options Cell value inspect field property editor"]').first().getByRole('switch', { name: 'Cell value inspect' })[22m
+e2e	Run e2e tests	2026-11-05T16:01:33.0210475Z   [2m    - locator resolved to <input role="switch" type="checkbox" id="custom.inspect" aria-invalid="false" item="[object Object]" context="[object Object]"/>[22m
+e2e	Run e2e tests	2026-11-05T16:01:33.0232255Z   [2m  - attempting click action[22m
+e2e	Run e2e tests	2026-11-05T16:01:33.0255587Z   [2m    - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-05T16:01:33.0276780Z   [2m    - done scrolling[22m
+e2e	Run e2e tests	2026-11-05T16:01:33.0296927Z   [2m    - forcing action[22m
+e2e	Run e2e tests	2026-11-05T16:01:33.0326926Z   [2m    - performing click action[22m
+e2e	Run e2e tests	2026-11-05T16:01:33.0356294Z 
+e2e	Run e2e tests	2026-11-05T16:01:33.0377697Z 
+e2e	Run e2e tests	2026-11-05T16:01:33.0387172Z   [0m [90m 374 |[39m       [33m.[39mfirst()
+e2e	Run e2e tests	2026-11-05T16:01:33.0414976Z    [90m 375 |[39m       [33m.[39mgetByRole([32m'switch'[39m[33m,[39m { name[33m:[39m [32m'Cell value inspect'[39m })
+e2e	Run e2e tests	2026-11-05T16:01:33.0447278Z   [31m[1m>[22m[39m[90m 376 |[39m       [33m.[39mclick({ force[33m:[39m [36mtrue[39m })[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:01:33.0477357Z    [90m     |[39m        [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T16:01:33.0499148Z    [90m 377 |[39m     [36mawait[39m loremIpsumCell[33m.[39mhover()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:01:33.0526074Z    [90m 378 |[39m     [36mawait[39m expect(getCellHeight(firstNestedTable[33m,[39m [35m1[39m[33m,[39m longTextColIdx))[33m.[39mresolves[33m.[39mtoBeLessThan([35m100[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:01:33.0541516Z    [90m 379 |[39m[0m
+e2e	Run e2e tests	2026-11-05T16:01:33.0597054Z 
+e2e	Run e2e tests	2026-11-05T16:01:33.0599095Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/table-nested.spec.ts:376:8
+e2e	Run e2e tests	2026-11-05T16:01:33.0629675Z 
+e2e	Run e2e tests	2026-11-05T16:01:38.6990438Z   passed [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:7:7 › Panels test: TimeSeries › renders successfully
+e2e	Run e2e tests	2026-11-05T16:01:39.9474324Z   passed [panels] › e2e-playwright/panels-suite/timeseries-mouse-zoom-interaction.spec.ts:65:7 › Panels test: Timeseries zoom interaction › does not show zoom cursor when modifier keys are pressed
+e2e	Run e2e tests	2026-11-05T16:02:10.4191608Z   failed [panels] › e2e-playwright/panels-suite/timeseries-mouse-zoom-interaction.spec.ts:33:7 › Panels test: Timeseries zoom interaction › shows zoom cursor during y-axis drag-to-zoom interaction with Shift key (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:02:10.4273467Z 
+e2e	Run e2e tests	2026-11-05T16:02:10.4307738Z   Error: uplot overlay is visible
+e2e	Run e2e tests	2026-11-05T16:02:10.4308639Z 
+e2e	Run e2e tests	2026-11-05T16:02:10.4347401Z   [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T16:02:10.4377824Z 
+e2e	Run e2e tests	2026-11-05T16:02:10.4417552Z   Locator: locator('.u-over').first()
+e2e	Run e2e tests	2026-11-05T16:02:10.4477438Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T16:02:10.4502902Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-05T16:02:10.4526607Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-05T16:02:10.4556060Z 
+e2e	Run e2e tests	2026-11-05T16:02:10.4578949Z   Call log:
+e2e	Run e2e tests	2026-11-05T16:02:10.4643377Z   [2m  - uplot overlay is visible with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T16:02:10.4647063Z   [2m  - waiting for locator('.u-over').first()[22m
+e2e	Run e2e tests	2026-11-05T16:02:10.4676154Z 
+e2e	Run e2e tests	2026-11-05T16:02:10.4721189Z 
+e2e	Run e2e tests	2026-11-05T16:02:10.4757156Z   [0m [90m 40 |[39m
+e2e	Run e2e tests	2026-11-05T16:02:10.4758707Z    [90m 41 |[39m     [36mconst[39m uplotOverlay [33m=[39m page[33m.[39mlocator([32m'.u-over'[39m)[33m.[39mfirst()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:02:10.4760789Z   [31m[1m>[22m[39m[90m 42 |[39m     [36mawait[39m expect(uplotOverlay[33m,[39m [32m'uplot overlay is visible'[39m)[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:02:10.4761831Z    [90m    |[39m                                                            [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T16:02:10.4762302Z    [90m 43 |[39m
+e2e	Run e2e tests	2026-11-05T16:02:10.4762982Z    [90m 44 |[39m     [36mconst[39m bbox [33m=[39m [36mawait[39m uplotOverlay[33m.[39mboundingBox()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:02:10.4763984Z    [90m 45 |[39m     expect(bbox[33m,[39m [32m'uplot overlay has dimensions'[39m)[33m.[39mtoBeDefined()[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T16:02:10.4764406Z 
+e2e	Run e2e tests	2026-11-05T16:02:10.4765111Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/timeseries-mouse-zoom-interaction.spec.ts:42:60
+e2e	Run e2e tests	2026-11-05T16:02:10.4765642Z 
+e2e	Run e2e tests	2026-11-05T16:02:11.0596522Z   passed [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:83:7 › Panels test: TimeSeries › draw style change updates available options
+e2e	Run e2e tests	2026-11-05T16:02:36.9603587Z   passed [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:123:7 › Panels test: TimeSeries › renders a panel whose legend display mode is hidden
+e2e	Run e2e tests	2026-11-05T16:02:37.4228394Z   failed [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:19:7 › Panels test: TimeSeries › tooltip interactions (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:02:37.4258003Z 
+e2e	Run e2e tests	2026-11-05T16:02:37.4308507Z   Error: uplot is rendered
+e2e	Run e2e tests	2026-11-05T16:02:37.4349788Z 
+e2e	Run e2e tests	2026-11-05T16:02:37.4420313Z   [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T16:02:37.4471152Z 
+e2e	Run e2e tests	2026-11-05T16:02:37.4500368Z   Locator: locator('[data-testid="data-testid panel content"]').locator('.uplot')
+e2e	Run e2e tests	2026-11-05T16:02:37.4586556Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T16:02:37.4638103Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-05T16:02:37.4656611Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-05T16:02:37.4736105Z 
+e2e	Run e2e tests	2026-11-05T16:02:37.4779289Z   Call log:
+e2e	Run e2e tests	2026-11-05T16:02:37.4869392Z   [2m  - uplot is rendered with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T16:02:37.4895998Z   [2m  - waiting for locator('[data-testid="data-testid panel content"]').locator('.uplot')[22m
+e2e	Run e2e tests	2026-11-05T16:02:37.4956104Z 
+e2e	Run e2e tests	2026-11-05T16:02:37.4986069Z 
+e2e	Run e2e tests	2026-11-05T16:02:37.5026360Z   [0m [90m 26 |[39m       [33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mPanel[39m[33m.[39mcontent)
+e2e	Run e2e tests	2026-11-05T16:02:37.5160236Z    [90m 27 |[39m       [33m.[39mlocator([32m'.uplot'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:02:37.5229866Z   [31m[1m>[22m[39m[90m 28 |[39m     [36mawait[39m expect(timeseriesUplot[33m,[39m [32m'uplot is rendered'[39m)[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:02:37.5287305Z    [90m    |[39m                                                        [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T16:02:37.5300299Z    [90m 29 |[39m
+e2e	Run e2e tests	2026-11-05T16:02:37.5380405Z    [90m 30 |[39m     [36mconst[39m tooltip [33m=[39m dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mPanels[39m[33m.[39m[33mVisualization[39m[33m.[39m[33mTooltip[39m[33m.[39m[33mWrapper[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:02:37.5487804Z    [90m 31 |[39m     [36mconst[39m hovered [33m=[39m { position[33m:[39m { x[33m:[39m [35m100[39m[33m,[39m y[33m:[39m [35m50[39m } }[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T16:02:37.5530683Z 
+e2e	Run e2e tests	2026-11-05T16:02:37.5577321Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/timeseries.spec.ts:28:56
+e2e	Run e2e tests	2026-11-05T16:02:37.5686666Z 
+e2e	Run e2e tests	2026-11-05T16:02:40.7728674Z   passed [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:66:7 › Panels test: TimeSeries › timeseries options are accessible in edit mode flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:02:46.3604517Z   passed [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:107:7 › Panels test: TimeSeries › legend toggle shows legend items
+e2e	Run e2e tests	2026-11-05T16:03:07.6218751Z   passed [panels] › e2e-playwright/panels-suite/trend.spec.ts:6:7 › Panels test: Trend › renders successfully
+e2e	Run e2e tests	2026-11-05T16:03:10.9948041Z   passed [panels] › e2e-playwright/panels-suite/trend.spec.ts:46:7 › Panels test: Trend › no data
+e2e	Run e2e tests	2026-11-05T16:03:37.5928122Z   passed [panels] › e2e-playwright/panels-suite/xychart.spec.ts:10:7 › Panels test: XYChart › renders successfully
+e2e	Run e2e tests	2026-11-05T16:03:37.6068619Z   failed [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:170:7 › Panels test: TimeSeries X-axis panning › x-axis panning functionality (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:03:37.6116747Z 
+e2e	Run e2e tests	2026-11-05T16:03:37.6153455Z   Error: panel rendered
+e2e	Run e2e tests	2026-11-05T16:03:37.6270798Z 
+e2e	Run e2e tests	2026-11-05T16:03:37.6294979Z   [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-05T16:03:37.6353692Z 
+e2e	Run e2e tests	2026-11-05T16:03:37.6371520Z   Locator: locator('.uplot').first()
+e2e	Run e2e tests	2026-11-05T16:03:37.6372330Z   Expected: visible
+e2e	Run e2e tests	2026-11-05T16:03:37.6372848Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-05T16:03:37.6373362Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-05T16:03:37.6373738Z 
+e2e	Run e2e tests	2026-11-05T16:03:37.6374026Z   Call log:
+e2e	Run e2e tests	2026-11-05T16:03:37.6374953Z   [2m  - panel rendered with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-05T16:03:37.6376201Z   [2m  - waiting for locator('.uplot').first()[22m
+e2e	Run e2e tests	2026-11-05T16:03:37.6416387Z 
+e2e	Run e2e tests	2026-11-05T16:03:37.6432946Z 
+e2e	Run e2e tests	2026-11-05T16:03:37.6434564Z   [0m [90m 178 |[39m
+e2e	Run e2e tests	2026-11-05T16:03:37.6436485Z    [90m 179 |[39m       [36mconst[39m timeseriesPanel [33m=[39m page[33m.[39mlocator([32m'.uplot'[39m)[33m.[39mfirst()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:03:37.6507452Z   [31m[1m>[22m[39m[90m 180 |[39m       [36mawait[39m expect(timeseriesPanel[33m,[39m [32m'panel rendered'[39m)[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:03:37.6542968Z    [90m     |[39m                                                       [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T16:03:37.6577288Z    [90m 181 |[39m
+e2e	Run e2e tests	2026-11-05T16:03:37.6603522Z    [90m 182 |[39m       [36mconst[39m xAxis [33m=[39m timeseriesPanel[33m.[39mlocator([32m'.u-axis'[39m)[33m.[39mfirst()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:03:37.6645462Z    [90m 183 |[39m       [36mawait[39m expect(xAxis[33m,[39m [32m'x-axis rendered'[39m)[33m.[39mtoBeVisible()[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T16:03:37.6686296Z 
+e2e	Run e2e tests	2026-11-05T16:03:37.6863209Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/timeseries.spec.ts:180:55
+e2e	Run e2e tests	2026-11-05T16:03:37.6965463Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/timeseries.spec.ts:176:27
+e2e	Run e2e tests	2026-11-05T16:03:37.7007379Z 
+e2e	Run e2e tests	2026-11-05T16:03:53.4547868Z   failed [panels] › e2e-playwright/panels-suite/trend.spec.ts:21:7 › Panels test: Trend › legend (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:03:53.4576032Z 
+e2e	Run e2e tests	2026-11-05T16:03:53.4617378Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T16:03:53.4728014Z 
+e2e	Run e2e tests	2026-11-05T16:03:53.4806005Z 
+e2e	Run e2e tests	2026-11-05T16:03:53.4946171Z 
+e2e	Run e2e tests	2026-11-05T16:03:53.4994048Z 
+e2e	Run e2e tests	2026-11-05T16:03:53.5037883Z   Error: expect.not.toBeVisible: Target page, context or browser has been closed
+e2e	Run e2e tests	2026-11-05T16:03:53.5126263Z 
+e2e	Run e2e tests	2026-11-05T16:03:53.5148373Z   [0m [90m 41 |[39m       page[33m.[39mgetByRole([32m'button'[39m[33m,[39m { name[33m:[39m [32m'Torque (NM)'[39m })[33m,[39m
+e2e	Run e2e tests	2026-11-05T16:03:53.5219626Z    [90m 42 |[39m       [32m'legend item is no longer visible'[39m
+e2e	Run e2e tests	2026-11-05T16:03:53.5297701Z   [31m[1m>[22m[39m[90m 43 |[39m     )[33m.[39mnot[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:03:53.5318253Z    [90m    |[39m           [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T16:03:53.5357923Z    [90m 44 |[39m   })[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:03:53.5395390Z    [90m 45 |[39m
+e2e	Run e2e tests	2026-11-05T16:03:53.5427549Z    [90m 46 |[39m   test([32m'no data'[39m[33m,[39m [36masync[39m ({ gotoDashboardPage[33m,[39m selectors }) [33m=>[39m {[0m
+e2e	Run e2e tests	2026-11-05T16:03:53.5441454Z 
+e2e	Run e2e tests	2026-11-05T16:03:53.5457523Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/panels-suite/trend.spec.ts:43:11
+e2e	Run e2e tests	2026-11-05T16:03:53.5502099Z 
+e2e	Run e2e tests	2026-11-05T16:04:04.8889645Z   passed [panels] › e2e-playwright/panels-suite/xychart.spec.ts:37:7 › Panels test: XYChart › "no data" shows panel error message
+e2e	Run e2e tests	2026-11-05T16:04:27.3549026Z   failed [panels] › e2e-playwright/panels-suite/trend.spec.ts:58:7 › Panels test: Trend › a11y (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:04:27.3636415Z 
+e2e	Run e2e tests	2026-11-05T16:04:27.3679784Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T16:04:27.3716079Z 
+e2e	Run e2e tests	2026-11-05T16:04:27.3766297Z 
+e2e	Run e2e tests	2026-11-05T16:04:27.3807106Z 
+e2e	Run e2e tests	2026-11-05T16:04:28.8998385Z   passed [panels] › e2e-playwright/panels-suite/xychart.spec.ts:61:7 › Panels test: XYChart › series mapping options are accessible in edit mode
+e2e	Run e2e tests	2026-11-05T16:04:46.7798789Z   passed [panels] › e2e-playwright/panels-suite/xychart.spec.ts:25:7 › Panels test: XYChart › is accessible flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:04:53.9649607Z   passed [panels] › e2e-playwright/panels-suite/xychart.spec.ts:99:9 › Panels test: XYChart › renders points colored by field value (Color by field (threshold))
+e2e	Run e2e tests	2026-11-05T16:04:53.9756726Z   skipped [panels] › e2e-playwright/panels-suite/xychart.spec.ts:113:8 › Panels test: XYChart › tooltip interactions
+e2e	Run e2e tests	2026-11-05T16:04:56.4068470Z   passed [panels] › e2e-playwright/panels-suite/xychart.spec.ts:50:7 › Panels test: XYChart › legend items are visible flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:04:57.6910361Z   passed [panels] › e2e-playwright/panels-suite/xychart.spec.ts:74:7 › Panels test: XYChart › point options are accessible in edit mode
+e2e	Run e2e tests	2026-11-05T16:05:07.7068361Z   passed [panels] › e2e-playwright/panels-suite/xychart.spec.ts:99:9 › Panels test: XYChart › renders points colored by field value (Color by field (value mappings))
+e2e	Run e2e tests	2026-11-05T16:05:28.9825353Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_toolbarActions.spec.ts:22:7 › Panel edit: toolbar actions › renders Back and Discard in the controls row
+e2e	Run e2e tests	2026-11-05T16:05:29.2142879Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_toolbarActions.spec.ts:43:7 › Panel edit: toolbar actions › shortens the action labels, keeping the full text in tooltips
+e2e	Run e2e tests	2026-11-05T16:05:31.4533173Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_toolbarActions.spec.ts:59:7 › Panel edit: toolbar actions › Back returns to the dashboard
+e2e	Run e2e tests	2026-11-05T16:05:47.5508043Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:116:9 › Query Editor Next: Transformation editor mount smoke › Reduce editor mounts with default options
+e2e	Run e2e tests	2026-11-05T16:06:09.7024719Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:116:9 › Query Editor Next: Transformation editor mount smoke › Group by editor mounts with default options
+e2e	Run e2e tests	2026-11-05T16:06:09.7768041Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:116:9 › Query Editor Next: Transformation editor mount smoke › Convert field type editor mounts with default options
+e2e	Run e2e tests	2026-11-05T16:06:12.3619079Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:116:9 › Query Editor Next: Transformation editor mount smoke › Group to nested tables editor mounts with default options
+e2e	Run e2e tests	2026-11-05T16:06:14.5318956Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:116:9 › Query Editor Next: Transformation editor mount smoke › Format time editor mounts with default options
+e2e	Run e2e tests	2026-11-05T16:06:46.1196526Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:163:11 › Query Editor Next: Transformation picker applicability › Format time is flagged as not applicable for an input without a time field
+e2e	Run e2e tests	2026-11-05T16:06:46.2093077Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:116:9 › Query Editor Next: Transformation editor mount smoke › Merge series/tables editor mounts with default options
+e2e	Run e2e tests	2026-11-05T16:06:46.2722861Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:163:11 › Query Editor Next: Transformation picker applicability › Grouping to matrix is flagged as not applicable for an input with fewer than three fields
+e2e	Run e2e tests	2026-11-05T16:06:47.0296276Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:116:9 › Query Editor Next: Transformation editor mount smoke › Grouping to matrix editor mounts with default options
+e2e	Run e2e tests	2026-11-05T16:07:16.7149327Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-restore-permissions.spec.ts:111:11 › Dashboard restore permissions › Restore failure toasts are permission-aware › create denied with 403 shows the folder-permission guidance
+e2e	Run e2e tests	2026-11-05T16:07:18.1385254Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-restore-permissions.spec.ts:65:11 › Dashboard restore permissions › Restore fetches through the recently-deleted listing › restore reads the dashboard from the recently-deleted listing, not at a resourceVersion
+e2e	Run e2e tests	2026-11-05T16:07:19.4650693Z   passed [dashboards] › e2e-playwright/dashboards-suite/adhoc-filter-from-panel.spec.ts:37:9 › Dashboard with Table powered by Prometheus data source › Should add adhoc filter when clicking "Filter for value" button on table cell
+e2e	Run e2e tests	2026-11-05T16:07:42.0881207Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-restore-permissions.spec.ts:140:11 › Dashboard restore permissions › Restore failure toasts are permission-aware › empty recently-deleted listing result shows the ask-an-administrator guidance
+e2e	Run e2e tests	2026-11-05T16:07:44.6625174Z   passed [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:163:11 › Query Editor Next: Transformation picker applicability › Group to nested tables is flagged as not applicable for an input with a single field flaky (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:07:50.0738882Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-export-image.spec.ts:17:9 › Export as Image › Show renderer not available message when plugin not installed
+e2e	Run e2e tests	2026-11-05T16:07:58.3106503Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-browse.spec.ts:45:9 › Dashboard browse › Manage Dashboards tests
+e2e	Run e2e tests	2026-11-05T16:08:13.1108196Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-export-json.spec.ts:15:9 › Export as JSON › Export for internal and external use
+e2e	Run e2e tests	2026-11-05T16:08:16.1418358Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-keybindings.spec.ts:21:9 › Dashboard keybindings › should collapse and expand all rows
+e2e	Run e2e tests	2026-11-05T16:08:23.2123660Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-keybindings.spec.ts:50:9 › Dashboard keybindings › should open panel inspect
+e2e	Run e2e tests	2026-11-05T16:08:25.1108482Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-keybindings.spec.ts:74:11 › Dashboard keybindings › when Grafana is served from a sub path › should open the focused panel in Explore
+e2e	Run e2e tests	2026-11-05T16:08:41.5552084Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-links-without-slug.spec.ts:40:9 › Dashboard with data links that have no slug › Should not reload if linking to same dashboard
+e2e	Run e2e tests	2026-11-05T16:08:43.6674844Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-live-streaming.spec.ts:40:9 › Dashboard Live streaming support › Should receive streaming data
+e2e	Run e2e tests	2026-11-05T16:09:03.1402293Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-restore-v1.spec.ts:89:11 › Dashboard restore › Delete from browse and restore › Delete from browse, verify in recently deleted, restore back to browse
+e2e	Run e2e tests	2026-11-05T16:09:05.9537172Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-restore-v1.spec.ts:152:11 › Dashboard restore › Delete from dashboard settings › Delete from dashboard settings, verify in recently deleted
+e2e	Run e2e tests	2026-11-05T16:09:21.7821899Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-restore-v2.spec.ts:54:9 › Dashboard restore - V2 dashboards › Delete V2 dashboard, verify in recently deleted, restore
+e2e	Run e2e tests	2026-11-05T16:09:28.3714929Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-share-externally-create.spec.ts:28:9 › Shared dashboards › Close share externally drawer
+e2e	Run e2e tests	2026-11-05T16:09:38.7578776Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-restore-v2.spec.ts:137:9 › Dashboard restore - V2 deleted folder › Restore modal for V2 dashboard from deleted folder has no folder pre-selected and button disabled
+e2e	Run e2e tests	2026-11-05T16:09:53.9453530Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-share-externally-create.spec.ts:52:9 › Shared dashboards › Create and disable a shared dashboard and check API
+e2e	Run e2e tests	2026-11-05T16:09:57.3958683Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-share-internally.spec.ts:24:9 › Share internally › Create a locked time range short link
+e2e	Run e2e tests	2026-11-05T16:10:04.9318337Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-share-internally.spec.ts:75:9 › Share internally › Create a relative time range short link
+e2e	Run e2e tests	2026-11-05T16:10:05.9397081Z   failed [dashboards] › e2e-playwright/dashboards-suite/dashboard-restore-v1.spec.ts:242:11 › Dashboard restore › Folder deletion and restore modal behavior › Deleted folder dashboards require folder selection, existing folder dashboards auto-select (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:10:05.9426142Z 
+e2e	Run e2e tests	2026-11-05T16:10:05.9519999Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T16:10:05.9615444Z 
+e2e	Run e2e tests	2026-11-05T16:10:05.9709901Z 
+e2e	Run e2e tests	2026-11-05T16:10:05.9737616Z 
+e2e	Run e2e tests	2026-11-05T16:10:24.8659246Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-share-internally.spec.ts:124:9 › Share internally › Share button gets configured link
+e2e	Run e2e tests	2026-11-05T16:10:36.5410070Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-share-snapshot-create.spec.ts:19:9 › Snapshots › Create a snapshot dashboard
+e2e	Run e2e tests	2026-11-05T16:10:38.5799619Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-tabs-drag-drop.spec.ts:26:7 › Dashboard Tabs Drag and Drop › drag a tab within the same tabs manager
+e2e	Run e2e tests	2026-11-05T16:10:41.3664749Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-tabs-drag-drop.spec.ts:60:7 › Dashboard Tabs Drag and Drop › drag a tab to a different tabs manager (in a different row)
+e2e	Run e2e tests	2026-11-05T16:10:47.1447443Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-templating.spec.ts:18:9 › Dashboard templating › Verify variable interpolation works
+e2e	Run e2e tests	2026-11-05T16:11:15.9254665Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-time-zone.spec.ts:60:9 › Dashboard time zone support › Tests dashboard time zone scenarios
+e2e	Run e2e tests	2026-11-05T16:11:51.7548817Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-timepicker.spec.ts:74:9 › Dashboard timepicker › Shows the correct calendar days with custom timezone set via time picker
+e2e	Run e2e tests	2026-11-05T16:12:00.5747999Z   failed [dashboards] › e2e-playwright/dashboards-suite/dashboard-time-zone.spec.ts:236:11 › Dashboard time zone support › on a server with the Luxon date implementation › refreshes a dashboard saved with the default time zone (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:12:00.5813891Z 
+e2e	Run e2e tests	2026-11-05T16:12:00.5947931Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T16:12:00.5976081Z 
+e2e	Run e2e tests	2026-11-05T16:12:00.5981684Z 
+e2e	Run e2e tests	2026-11-05T16:12:00.5986538Z 
+e2e	Run e2e tests	2026-11-05T16:12:00.5996044Z 
+e2e	Run e2e tests	2026-11-05T16:12:00.6036940Z   Error: page.waitForRequest: Test timeout of 30000ms exceeded.
+e2e	Run e2e tests	2026-11-05T16:12:00.6073085Z 
+e2e	Run e2e tests	2026-11-05T16:12:00.6074554Z   [0m [90m 278 |[39m         [36mawait[39m expect(runButton)[33m.[39mtoContainText([32m'Refresh'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:12:00.6076105Z    [90m 279 |[39m
+e2e	Run e2e tests	2026-11-05T16:12:00.6078334Z   [31m[1m>[22m[39m[90m 280 |[39m         [36mconst[39m refreshQuery [33m=[39m page[33m.[39mwaitForRequest((req) [33m=>[39m req[33m.[39murl()[33m.[39mincludes([32m'/api/ds/query'[39m))[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:12:00.6161787Z    [90m     |[39m                                   [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T16:12:00.6168947Z    [90m 281 |[39m         [36mawait[39m runButton[33m.[39mclick()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:12:00.6184095Z    [90m 282 |[39m         [36mawait[39m refreshQuery[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:12:00.6185183Z    [90m 283 |[39m       })[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T16:12:00.6185957Z 
+e2e	Run e2e tests	2026-11-05T16:12:00.6193816Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/dashboards-suite/dashboard-time-zone.spec.ts:280:35
+e2e	Run e2e tests	2026-11-05T16:12:00.6207611Z 
+e2e	Run e2e tests	2026-11-05T16:12:01.0348626Z   failed [dashboards] › e2e-playwright/dashboards-suite/dashboard-time-zone.spec.ts:140:9 › Dashboard time zone support › Tests relative timezone support and overrides (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:12:01.0410402Z 
+e2e	Run e2e tests	2026-11-05T16:12:01.0511679Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T16:12:01.0581684Z 
+e2e	Run e2e tests	2026-11-05T16:12:01.0644377Z 
+e2e	Run e2e tests	2026-11-05T16:12:01.0690604Z 
+e2e	Run e2e tests	2026-11-05T16:12:20.6151913Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-view-panel.spec.ts:18:7 › View panel › Can enter and exit view panel
+e2e	Run e2e tests	2026-11-05T16:12:21.2929462Z   failed [dashboards] › e2e-playwright/dashboards-suite/dashboard-timepicker.spec.ts:29:9 › Dashboard timepicker › Shows the correct calendar days with custom timezone set via preferences (2 attempts)
+e2e	Run e2e tests	2026-11-05T16:12:21.3113014Z 
+e2e	Run e2e tests	2026-11-05T16:12:21.3212897Z   [31mTest timeout of 30000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-05T16:12:21.3384825Z 
+e2e	Run e2e tests	2026-11-05T16:12:21.3499757Z 
+e2e	Run e2e tests	2026-11-05T16:12:21.3598922Z 
+e2e	Run e2e tests	2026-11-05T16:12:21.3701820Z 
+e2e	Run e2e tests	2026-11-05T16:12:21.3902277Z   Error: locator.click: Test timeout of 30000ms exceeded.
+e2e	Run e2e tests	2026-11-05T16:12:21.4006853Z   Call log:
+e2e	Run e2e tests	2026-11-05T16:12:21.4137853Z   [2m  - waiting for locator('[data-testid="data-testid TimePicker Open Button"]')[22m
+e2e	Run e2e tests	2026-11-05T16:12:21.4318602Z 
+e2e	Run e2e tests	2026-11-05T16:12:21.4506168Z 
+e2e	Run e2e tests	2026-11-05T16:12:21.4667195Z   [0m [90m 62 |[39m         })[33m,[39m
+e2e	Run e2e tests	2026-11-05T16:12:21.4797149Z    [90m 63 |[39m       })[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:12:21.4838117Z   [31m[1m>[22m[39m[90m 64 |[39m       [36mawait[39m dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mTimePicker[39m[33m.[39mopenButton)[33m.[39mclick()[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:12:21.4927347Z    [90m    |[39m                                                                                            [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-05T16:12:21.5018748Z    [90m 65 |[39m       [36mawait[39m dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mTimePicker[39m[33m.[39mfromField)[33m.[39mfill([32m'2022-06-08 00:00:00'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:12:21.5168900Z    [90m 66 |[39m       [36mawait[39m dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mTimePicker[39m[33m.[39mtoField)[33m.[39mfill([32m'2022-06-10 23:59:59'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-05T16:12:21.5318812Z    [90m 67 |[39m       [36mawait[39m dashboardPage[33m.[39mgetByGrafanaSelector(selectors[33m.[39mcomponents[33m.[39m[33mTimePicker[39m[33m.[39mcalendar[33m.[39mopenButton)[33m.[39mfirst()[33m.[39mclick()[33m;[39m[0m
+e2e	Run e2e tests	2026-11-05T16:12:21.5458074Z 
+e2e	Run e2e tests	2026-11-05T16:12:21.5517604Z       at /home/runner/work/grafana-669158/grafana-669158/e2e-playwright/dashboards-suite/dashboard-timepicker.spec.ts:64:92
+e2e	Run e2e tests	2026-11-05T16:12:21.5576113Z 
+e2e	Run e2e tests	2026-11-05T16:12:29.1714076Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-view-panel.spec.ts:41:7 › View panel › Can fan-out by series
+e2e	Run e2e tests	2026-11-05T16:12:29.4493166Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-view-panel.spec.ts:29:7 › View panel › Can toggle panel viz option
+e2e	Run e2e tests	2026-11-05T16:12:41.9548130Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-view-panel.spec.ts:63:7 › View panel › Can fan-out by label
+e2e	Run e2e tests	2026-11-05T16:12:47.9996639Z   passed [dashboards] › e2e-playwright/dashboards-suite/dashboard-view-panel.spec.ts:84:7 › View panel › Can fan-out by label based on url sync
+e2e	Run e2e tests	2026-11-05T16:13:01.4917684Z   passed [dashboards] › e2e-playwright/dashboards-suite/embedded-dashboard.spec.ts:15:9 › Embedded dashboard › open test page
+e2e	Run e2e tests	2026-11-05T16:13:08.5099635Z   passed [dashboards] › e2e-playwright/dashboards-suite/general-dashboards.spec.ts:17:9 › Dashboards › should restore scroll position
+e2e	Run e2e tests	2026-11-05T16:13:13.6678599Z   passed [dashboards] › e2e-playwright/dashboards-suite/import-dashboard.spec.ts:25:9 › Import Dashboards Test › Ensure you can import a number of json test dashboards from a specific test directory
+e2e	Run e2e tests	2026-11-05T16:13:17.1661926Z   passed [dashboards] › e2e-playwright/dashboards-suite/load-options-from-url.spec.ts:17:9 › Variables - Load options from Url › default options should be correct
+e2e	Run e2e tests	2026-11-05T16:13:34.5628608Z   passed [dashboards] › e2e-playwright/dashboards-suite/load-options-from-url.spec.ts:121:9 › Variables - Load options from Url › options set in url should load correct options
+e2e	Run e2e tests	2026-11-05T16:13:39.8011695Z   passed [dashboards] › e2e-playwright/dashboards-suite/load-options-from-url.spec.ts:239:9 › Variables - Load options from Url › options set in url that do not exist should load correct options
+e2e	Run e2e tests	2026-11-05T16:13:43.7269711Z   passed [dashboards] › e2e-playwright/dashboards-suite/new-constant-variable.spec.ts:23:9 › Variables - Constant › can add a new constant variable
+e2e	Run e2e tests	2026-11-05T16:13:48.1486705Z   passed [dashboards] › e2e-playwright/dashboards-suite/new-custom-variable.spec.ts:70:9 › Variables - Custom › can add a custom template variable
+e2e	Run e2e tests	2026-11-05T16:14:05.9708362Z   passed [dashboards] › e2e-playwright/dashboards-suite/new-custom-variable.spec.ts:98:9 › Variables - Custom › can add a custom template variable with labels
+e2e	Run e2e tests	2026-11-05T16:14:09.2058821Z   passed [dashboards] › e2e-playwright/dashboards-suite/new-interval-variable.spec.ts:36:9 › Variables - Interval › can add a new interval variable
+e2e	Run e2e tests	2026-11-05T16:14:18.0377884Z   passed [dashboards] › e2e-playwright/dashboards-suite/new-query-variable.spec.ts:130:9 › Variables - Query - Add variable › adding a single value query variable
+e2e	Run e2e tests	2026-11-05T16:14:25.0589902Z   passed [dashboards] › e2e-playwright/dashboards-suite/new-query-variable.spec.ts:23:9 › Variables - Query - Add variable › query variable should be default and default fields should be correct
+e2e	Run e2e tests	2026-11-05T16:14:35.8727804Z   passed [dashboards] › e2e-playwright/dashboards-suite/new-query-variable.spec.ts:192:9 › Variables - Query - Add variable › adding a multi value query variable
+e2e	Run e2e tests	2026-11-05T16:14:37.1549896Z   passed [dashboards] › e2e-playwright/dashboards-suite/new-text-box-variable.spec.ts:23:9 › Variables - Text box › can add a new text box variable
+e2e	Run e2e tests	2026-11-05T16:14:42.0970910Z   passed [dashboards] › e2e-playwright/dashboards-suite/repeating-a-panel-horizontally.spec.ts:20:9 › Repeating a panel horizontally › should be able to repeat a panel horizontally
+e2e	Run e2e tests	2026-11-05T16:14:51.2328333Z   passed [dashboards] › e2e-playwright/dashboards-suite/repeating-a-panel-horizontally.spec.ts:47:9 › Repeating a panel horizontally › responds to changes to the variables
+e2e	Run e2e tests	2026-11-05T16:15:00.6762776Z   passed [dashboards] › e2e-playwright/dashboards-suite/repeating-a-panel-horizontally.spec.ts:106:9 › Repeating a panel horizontally › loads a dashboard based on the query params correctly
+e2e	Run e2e tests	2026-11-05T16:15:02.4796097Z   passed [dashboards] › e2e-playwright/dashboards-suite/repeating-a-panel-vertically.spec.ts:17:9 › Repeating a panel vertically › should be able to repeat a panel vertically
+e2e	Run e2e tests	2026-11-05T16:15:10.1338609Z   passed [dashboards] › e2e-playwright/dashboards-suite/repeating-a-panel-vertically.spec.ts:44:9 › Repeating a panel vertically › responds to changes to the variables
+e2e	Run e2e tests	2026-11-05T16:15:17.0139658Z   passed [dashboards] › e2e-playwright/dashboards-suite/repeating-a-panel-vertically.spec.ts:103:9 › Repeating a panel vertically › loads a dashboard based on the query params correctly
+e2e	Run e2e tests	2026-11-05T16:15:25.5019417Z   passed [dashboards] › e2e-playwright/dashboards-suite/repeating-an-empty-row.spec.ts:17:9 › Repeating empty rows › should be able to repeat empty rows vertically
+e2e	Run e2e tests	2026-11-05T16:15:26.4565016Z   passed [dashboards] › e2e-playwright/dashboards-suite/repeating-an-empty-row.spec.ts:38:9 › Repeating empty rows › responds to changes to the variables
+e2e	Run e2e tests	2026-11-05T16:15:26.4659001Z   skipped [dashboards] › e2e-playwright/dashboards-suite/set-options-from-ui.spec.ts:209:10 › Variables - Set options from ui › removing a value that is part of dependents options should remove the new values dependant options
+e2e	Run e2e tests	2026-11-05T16:15:35.7055984Z   passed [dashboards] › e2e-playwright/dashboards-suite/repeating-an-empty-row.spec.ts:91:9 › Repeating empty rows › loads a dashboard based on the query params correctly
+e2e	Run e2e tests	2026-11-05T16:15:50.9544938Z   passed [dashboards] › e2e-playwright/dashboards-suite/set-options-from-ui.spec.ts:17:9 › Variables - Set options from ui › clicking a value that is not part of dependents options should change these to All
+e2e	Run e2e tests	2026-11-05T16:15:56.0339206Z   passed [dashboards] › e2e-playwright/dashboards-suite/set-options-from-ui.spec.ts:117:9 › Variables - Set options from ui › adding a value that is not part of dependents options should add the new values dependant options
+e2e	Run e2e tests	2026-11-05T16:15:56.1319317Z   passed [dashboards] › e2e-playwright/dashboards-suite/templating-dashboard-links-and-variables.spec.ts:17:9 › Templating dashboard links and variables › Tests dashboard links and variables in links
+e2e	Run e2e tests	2026-11-05T16:15:58.2870290Z   passed [dashboards] › e2e-playwright/dashboards-suite/textbox-variables.spec.ts:19:9 › TextBox - load options scenarios › default options should be correct
+e2e	Run e2e tests	2026-11-05T16:16:01.6524240Z   passed [dashboards] › e2e-playwright/dashboards-suite/textbox-variables.spec.ts:25:9 › TextBox - load options scenarios › loading variable from url should be correct
+e2e	Run e2e tests	2026-11-05T16:16:09.4776356Z   Test results: 197 overall, 164 passed, 2 skipped, 31 failed, 12 flaky
+e2e	Run e2e tests	2026-11-05T16:16:09.4777664Z     31 failed
+e2e	Run e2e tests	2026-11-05T16:16:09.4781217Z       [various] › e2e-playwright/various-suite/inspect-drawer.spec.ts:13:9 › Inspect drawer tests › Tests various Inspect Drawer scenarios https://app.currents.dev/i/6df3e09420b7860b/test/1b49c103937cc81c5d1a-1e7b22470a32cfa2e604 1m 14.4s
+e2e	Run e2e tests	2026-11-05T16:16:09.4786237Z       [panels] › e2e-playwright/panels-suite/barchart-options.spec.ts:12:7 › Panels test: BarChart options › show values - toggle always/never/auto https://app.currents.dev/i/65450e008f643723/test/638d63542875c86a0666-a7f96abfed7c8e6410c4 49.2s
+e2e	Run e2e tests	2026-11-05T16:16:09.4790469Z       [panels] › e2e-playwright/panels-suite/barchart-tooltips.spec.ts:12:7 › Panels test: BarChart tooltips › tooltip interactions https://app.currents.dev/i/2e43f4c0875573fb/test/b210cd876e6f17dd9087-93aeebee25cc73d930eb 53.1s
+e2e	Run e2e tests	2026-11-05T16:16:09.4793896Z       [panels] › e2e-playwright/panels-suite/gauge.spec.ts:21:9 › Gauge Panel › a11y https://app.currents.dev/i/ea4d5c2d73e22f5a/test/493f76d98753c1224f94-3b095175801e851ab524 1m 3.5s
+e2e	Run e2e tests	2026-11-05T16:16:09.4796165Z       [panels] › e2e-playwright/panels-suite/gauge.spec.ts:45:9 › Gauge Panel › renders new gauge panels https://app.currents.dev/i/ea4d5c2d73e22f5a/test/493f76d98753c1224f94-2031dbf20829727fc61d 53.6s
+e2e	Run e2e tests	2026-11-05T16:16:09.4798043Z       [panels] › e2e-playwright/panels-suite/gauge.spec.ts:71:9 › Gauge Panel › data links https://app.currents.dev/i/ea4d5c2d73e22f5a/test/493f76d98753c1224f94-eb7bfc14a47a979f0e0f 48.5s
+e2e	Run e2e tests	2026-11-05T16:16:09.4799789Z       [panels] › e2e-playwright/panels-suite/gauge.spec.ts:101:9 › Gauge Panel › "no data" https://app.currents.dev/i/ea4d5c2d73e22f5a/test/493f76d98753c1224f94-319fbefeb5ab717c1b0d 1m 7.8s
+e2e	Run e2e tests	2026-11-05T16:16:09.4801781Z       [panels] › e2e-playwright/panels-suite/gauge.spec.ts:179:9 › Gauge Panel › renders a gauge after reducing a table with a text column https://app.currents.dev/i/ea4d5c2d73e22f5a/test/493f76d98753c1224f94-d08e77cb92ac62954e00 55.5s
+e2e	Run e2e tests	2026-11-05T16:16:09.4803886Z       [panels] › e2e-playwright/panels-suite/histogram.spec.ts:29:9 › Panels test: Histogram › panel options › legend https://app.currents.dev/i/23510d1c3be20a45/test/16dc81c6ae1292148823-a91b8545b25685c91c95 1m 14.3s
+e2e	Run e2e tests	2026-11-05T16:16:09.4806209Z       [panels] › e2e-playwright/panels-suite/panelEdit_base.spec.ts:13:9 › Panels test: Panel edit base › Tests various Panel edit scenarios https://app.currents.dev/i/3e667f7d5bb136a3/test/f9c9d58b0bcb147613e8-6e208ff70c481d0a77ef 1m 14.1s
+e2e	Run e2e tests	2026-11-05T16:16:09.4808500Z       [panels] › e2e-playwright/panels-suite/panelEdit_queries.spec.ts:11:9 › Panels test: Queries › Tests various Panel edit queries scenarios https://app.currents.dev/i/c4b74c445d9256f2/test/9636d37152e30c7fac41-c20166877f866bc74d3f 1m 15.3s
+e2e	Run e2e tests	2026-11-05T16:16:09.4810599Z       [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:35:7 › Panels test: Table - Kitchen Sink › a11y https://app.currents.dev/i/8ecda145cb0ae5d9/test/2f3ef9cf1c6230b4dd71-7c4f6c5a9204ba5d8c76 1m 17.7s
+e2e	Run e2e tests	2026-11-05T16:16:09.4813285Z       [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:47:7 › Panels test: Table - Kitchen Sink › Tests word wrap, hover overflow, max cell height, and cell inspect https://app.currents.dev/i/8ecda145cb0ae5d9/test/2f3ef9cf1c6230b4dd71-edc2f8a0bfb708f05712 1m 9.3s
+e2e	Run e2e tests	2026-11-05T16:16:09.4815956Z       [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:215:7 › Panels test: Table - Kitchen Sink › Tests pagination, row height adjustment https://app.currents.dev/i/8ecda145cb0ae5d9/test/2f3ef9cf1c6230b4dd71-1c070abb5b74acf3318f 1m 9.7s
+e2e	Run e2e tests	2026-11-05T16:16:09.4818410Z       [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:277:7 › Panels test: Table - Kitchen Sink › Tests DataLinks (single and multi) and actions https://app.currents.dev/i/8ecda145cb0ae5d9/test/2f3ef9cf1c6230b4dd71-4890c1b220cb8599b707 1m 6.7s
+e2e	Run e2e tests	2026-11-05T16:16:09.4821039Z       [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:376:7 › Panels test: Table - Kitchen Sink › Cross-filter: second filter popup only shows values reachable after first filter https://app.currents.dev/i/8ecda145cb0ae5d9/test/2f3ef9cf1c6230b4dd71-42d2a0c9db043adc272c 1m 12.6s
+e2e	Run e2e tests	2026-11-05T16:16:09.4823471Z       [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:456:7 › Panels test: Table - Kitchen Sink › Tests tooltip interactions https://app.currents.dev/i/8ecda145cb0ae5d9/test/2f3ef9cf1c6230b4dd71-49cc95066f881f3186b8 1m 24.2s
+e2e	Run e2e tests	2026-11-05T16:16:09.4826088Z       [panels] › e2e-playwright/panels-suite/table-kitchenSink.spec.ts:547:7 › Panels test: Table - Kitchen Sink › Styling overrides with styling from field https://app.currents.dev/i/8ecda145cb0ae5d9/test/2f3ef9cf1c6230b4dd71-4a7d95eee001406c1ed9 1m 12.6s
+e2e	Run e2e tests	2026-11-05T16:16:09.4828214Z       [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:11:7 › Panels test: Table - Nested › a11y https://app.currents.dev/i/f7b05efc15fcaf7b/test/b381160076ec36542e68-83e72897a738de21edef 1m 34.8s
+e2e	Run e2e tests	2026-11-05T16:16:09.4830453Z       [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:322:7 › Panels test: Table - Nested › word wrap, hover overflow, max cell height, and cell inspect https://app.currents.dev/i/f7b05efc15fcaf7b/test/b381160076ec36542e68-5a31a8d5755158354a2d 3m 39.7s
+e2e	Run e2e tests	2026-11-05T16:16:09.4832841Z       [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:409:7 › Panels test: Table - Nested › datalinks resolve field variables in nested table context https://app.currents.dev/i/f7b05efc15fcaf7b/test/b381160076ec36542e68-28397a894286991b9586 1m 18.3s
+e2e	Run e2e tests	2026-11-05T16:16:09.4835020Z       [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:504:7 › Panels test: Table - Nested › tooltip from field https://app.currents.dev/i/f7b05efc15fcaf7b/test/b381160076ec36542e68-575504162fcb897b68ef 1m 24.4s
+e2e	Run e2e tests	2026-11-05T16:16:09.4837702Z       [panels] › e2e-playwright/panels-suite/timeseries-mouse-zoom-interaction.spec.ts:33:7 › Panels test: Timeseries zoom interaction › shows zoom cursor during y-axis drag-to-zoom interaction with Shift key https://app.currents.dev/i/7590823b9ac3cc76/test/c3afa180e403680a123b-27f94df325e2594de30c 51.5s
+e2e	Run e2e tests	2026-11-05T16:16:09.4840023Z       [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:19:7 › Panels test: TimeSeries › tooltip interactions https://app.currents.dev/i/904c12a06f2cb1f9/test/cb2c65b1f8bc97295386-7312439b68694b154464 52s
+e2e	Run e2e tests	2026-11-05T16:16:09.4842123Z       [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:170:7 › Panels test: TimeSeries X-axis panning › x-axis panning functionality https://app.currents.dev/i/904c12a06f2cb1f9/test/cb2c65b1f8bc97295386-169595112cf5f937ea35 53s
+e2e	Run e2e tests	2026-11-05T16:16:09.4844047Z       [panels] › e2e-playwright/panels-suite/trend.spec.ts:21:7 › Panels test: Trend › legend https://app.currents.dev/i/a0e7c6f9604cf8bf/test/80a44064470078a2a9ab-939f2a3b8cd31e76e2ed 1m 3.2s
+e2e	Run e2e tests	2026-11-05T16:16:09.4845897Z       [panels] › e2e-playwright/panels-suite/trend.spec.ts:58:7 › Panels test: Trend › a11y https://app.currents.dev/i/a0e7c6f9604cf8bf/test/80a44064470078a2a9ab-60aaaab7547f4594446e 1m 12.7s
+e2e	Run e2e tests	2026-11-05T16:16:09.4848777Z       [dashboards] › e2e-playwright/dashboards-suite/dashboard-restore-v1.spec.ts:242:11 › Dashboard restore › Folder deletion and restore modal behavior › Deleted folder dashboards require folder selection, existing folder dashboards auto-select https://app.currents.dev/i/0b95dd88950a0d30/test/d41e81ecf242da93bb4e-62fe3ebce3380ae06a33 1m 11.2s
+e2e	Run e2e tests	2026-11-05T16:16:09.4851567Z       [dashboards] › e2e-playwright/dashboards-suite/dashboard-time-zone.spec.ts:140:9 › Dashboard time zone support › Tests relative timezone support and overrides https://app.currents.dev/i/adb0ccd70f240bc0/test/8944f8cf79b65f5a1a93-c2f000a9f50e50bda8f3 1m 7.4s
+e2e	Run e2e tests	2026-11-05T16:16:09.4854364Z       [dashboards] › e2e-playwright/dashboards-suite/dashboard-time-zone.spec.ts:236:11 › Dashboard time zone support › on a server with the Luxon date implementation › refreshes a dashboard saved with the default time zone https://app.currents.dev/i/adb0ccd70f240bc0/test/8944f8cf79b65f5a1a93-08824ad084433657f06a 1m 5.9s
+e2e	Run e2e tests	2026-11-05T16:16:09.4857453Z       [dashboards] › e2e-playwright/dashboards-suite/dashboard-timepicker.spec.ts:29:9 › Dashboard timepicker › Shows the correct calendar days with custom timezone set via preferences https://app.currents.dev/i/0a92e05a72381bc4/test/fd2b4c0e382c9da4c760-0f5929b19fba55044585 1m 15.6s
+e2e	Run e2e tests	2026-11-05T16:16:09.4858865Z     164 passed (12 flaky)
+e2e	Run e2e tests	2026-11-05T16:16:09.4860522Z       flaky [panels] › e2e-playwright/panels-suite/barchart-datalinks.spec.ts:18:7 › Panels test: BarChart data links › shows data links in pinned tooltip https://app.currents.dev/i/a302eba3dd27aa7c/test/e423e9485cfb765ffaff-aa376eacb39db2ff5988 58s
+e2e	Run e2e tests	2026-11-05T16:16:09.4862958Z       flaky [panels] › e2e-playwright/panels-suite/barchart-options.spec.ts:38:7 › Panels test: BarChart options › stacking 100 percent - renders and shows tooltip https://app.currents.dev/i/65450e008f643723/test/638d63542875c86a0666-2f45f87498b93530a75b 59.3s
+e2e	Run e2e tests	2026-11-05T16:16:09.4865249Z       flaky [panels] › e2e-playwright/panels-suite/barchart-render.spec.ts:10:7 › Panels test: BarChart render › renders successfully https://app.currents.dev/i/c543f5a667bac70a/test/c26fd77a93787fb49e63-db8b5d0163037e98f3c6 48.3s
+e2e	Run e2e tests	2026-11-05T16:16:09.4867697Z       flaky [panels] › e2e-playwright/panels-suite/gauge.spec.ts:60:9 › Gauge Panel › renders sparklines in gauge panels https://app.currents.dev/i/ea4d5c2d73e22f5a/test/493f76d98753c1224f94-2c6432e80ac482766666 45.8s
+e2e	Run e2e tests	2026-11-05T16:16:09.4869753Z       flaky [panels] › e2e-playwright/panels-suite/histogram.spec.ts:9:7 › Panels test: Histogram › renders successfully https://app.currents.dev/i/23510d1c3be20a45/test/16dc81c6ae1292148823-5bc1a812ff3cf1f9bdbc 49.7s
+e2e	Run e2e tests	2026-11-05T16:16:09.4872462Z       flaky [panels] › e2e-playwright/panels-suite/panelEdit_transformsSmoke.spec.ts:163:11 › Query Editor Next: Transformation picker applicability › Group to nested tables is flagged as not applicable for an input with a single field https://app.currents.dev/i/0836d3d31c773db9/test/1365c00b8fce28ee5762-5268c443dc0420c9aad5 50.7s
+e2e	Run e2e tests	2026-11-05T16:16:09.4874982Z       flaky [panels] › e2e-playwright/panels-suite/state-timeline.spec.ts:10:7 › Panels test: StateTimeine › renders successfully https://app.currents.dev/i/cd012c381c9c728b/test/0f6a5a9f90e4631a1fd2-c7063fc8e13bb93ae5f3 48.6s
+e2e	Run e2e tests	2026-11-05T16:16:09.4877316Z       flaky [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:476:7 › Panels test: Table - Nested › expand nested rows by default https://app.currents.dev/i/f7b05efc15fcaf7b/test/b381160076ec36542e68-f4b82784bba18aa5dbab 40.4s
+e2e	Run e2e tests	2026-11-05T16:16:09.4879777Z       flaky [panels] › e2e-playwright/panels-suite/table-nested.spec.ts:578:7 › Panels test: Table - Nested › no rows but nested transform renders empty state without crashing https://app.currents.dev/i/f7b05efc15fcaf7b/test/b381160076ec36542e68-aad031b88c169c63bf9e 44.9s
+e2e	Run e2e tests	2026-11-05T16:16:09.4882173Z       flaky [panels] › e2e-playwright/panels-suite/timeseries.spec.ts:66:7 › Panels test: TimeSeries › timeseries options are accessible in edit mode https://app.currents.dev/i/904c12a06f2cb1f9/test/cb2c65b1f8bc97295386-8dfeca60ccf1684b7b8a 55.9s
+e2e	Run e2e tests	2026-11-05T16:16:09.4884418Z       flaky [panels] › e2e-playwright/panels-suite/xychart.spec.ts:25:7 › Panels test: XYChart › is accessible https://app.currents.dev/i/de350762c6bf3fb5/test/cda708ce4386b5bfe25f-7fb475fccf14d4555aa9 59.4s
+e2e	Run e2e tests	2026-11-05T16:16:09.4886546Z       flaky [panels] › e2e-playwright/panels-suite/xychart.spec.ts:50:7 › Panels test: XYChart › legend items are visible https://app.currents.dev/i/de350762c6bf3fb5/test/cda708ce4386b5bfe25f-dcf58e435e02e3f28723 50.2s
+e2e	Run e2e tests	2026-11-05T16:16:09.4887465Z   Elapsed time: 33m 7.4s
+e2e	Run e2e tests	2026-11-05T16:16:09.4887740Z   Artifacts created: 1341
+e2e	Run e2e tests	2026-11-05T16:16:09.4888206Z   🌐 Run URL: https://app.currents.dev/run/0d85b9c8e894860a
+e2e	Run e2e tests	2026-11-05T16:16:12.2000103Z   💾 JSON output file: currents-report.json
+e2e	Run e2e tests	2026-11-05T16:16:12.2136200Z 
+e2e	Run e2e tests	2026-11-05T16:16:12.2156571Z ================================================================
+e2e	Run e2e tests	2026-11-05T16:16:12.2157070Z 
+e2e	Run e2e tests	2026-11-05T16:16:12.2157449Z 🏁 Done!
+e2e	Run e2e tests	2026-11-05T16:16:12.6043437Z ##[error]Process completed with exit code 1.
