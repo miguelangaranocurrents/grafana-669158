@@ -758,8 +758,15 @@ function normalizeZone(zone: string | Zone): Zone {
   }
 
   const name = normalizeZoneName(zone);
+  // moment-timezone keeps the instant in UTC when it has no data for a zone (e.g. Grafana's
+  // "default" time zone sentinel) instead of producing an invalid date.
   if (name === 'UTC') {
     return FixedOffsetZone.instance(0);
+  }
+
+  if (!IANAZone.isValidZone(name)) {
+    // fixed offsets (e.g. the zone name of a moment with a utcOffset) are not IANA zones but are valid
+    return FixedOffsetZone.parseSpecifier(name) ?? FixedOffsetZone.instance(0);
   }
 
   let normalized = easyTzZoneCache.get(name);
